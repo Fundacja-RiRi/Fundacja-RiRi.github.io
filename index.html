@@ -1,70 +1,101 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundacja RiRi – Strona Główna</title>
-    <!-- Łączenie z plikiem CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- ===============================
-         GÓRNY PASEK NAWIGACJI
-         =============================== -->
-    <header>
-        <nav class="navbar">
-            <!-- Logo lub nazwa poradni -->
-            <div class="logo">RiRi</div>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <!-- Lista linków w menu -->
-            <ul class="menu">
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="pliki.html">Pliki do pobrania</a></li>
-                <li><a href="cennik.html">Cennik</a></li>
-                <li><a href="aktualnosci.html">Aktualności</a></li>
-            </ul>
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-            <!-- Ikona hamburgera dla wersji mobilnej -->
-            <div class="hamburger">
-                &#9776; <!-- znak ☰ -->
+        <title>Fundacja RiRi</title>
+
+        <!-- CSS FILES -->        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/template.css" rel="stylesheet">
+
+    </head>
+    
+    <body id="section_1">
+
+        <header class="site-header">
+
+        </header>
+
+
+        <main>
+            <section class="testimonial-section section-padding section-bg">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h2 class="mb-lg-3">Strona w trakcie budowy</h2>
+                            <div class="testimonial-thumb">
+                                <img src="images/under-construction.png" class="img-fluid" alt="" style="max-width:300px; height:auto; display:block; margin:auto;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mb-4">
+                        <img src="images/logo.png" class="logo img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                        <h5 class="site-footer-title mb-3">Informacje kontaktowe</h5>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone me-2"></i>
+
+                            <a href="tel: +48 453 187 333" class="site-footer-link">
+                                +48 453 187 333
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="mailto:info@fundacja.riri@wp.pl" class="site-footer-link">
+                                fundacja.riri@wp.pl
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex mt-3">
+                            <i class="bi-geo-alt me-2"></i>
+                            ul. Kościuszki 108a, lokal 11, 50-441 Wrocław
+                        </p>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.4392602039634!2d17.041938877693923!3d51.10035524035628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc332e9ef0aef%3A0x1c4d6eb184993f61!2sFundacja%20RiRi!5e0!3m2!1sen!2spl!4v1755251241761!5m2!1sen!2spl" 
+                                width="600" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
 
-    <!-- ===============================
-         SEKCJA GŁÓWNA
-         =============================== -->
-    <main>
-        <!-- Nagłówek sekcji -->
-        <section class="hero">
-            <h1>Witamy w naszej Poradni Pedagogiczno-Psychologicznej</h1>
-            <p>Oferujemy wsparcie dzieciom, młodzieży, rodzicom i nauczycielom.
-               Nasz zespół składa się z doświadczonych psychologów, pedagogów
-               oraz logopedów, którzy służą pomocą w zakresie diagnozy, terapii
-               i poradnictwa.</p>
-        </section>
+            <div class="site-footer-bottom"></div>
+        </footer>
 
-        <!-- Krótkie informacje o ofercie -->
-        <section class="offer">
-            <h2>Co oferujemy?</h2>
-            <ul>
-                <li>Diagnoza psychologiczna i pedagogiczna</li>
-                <li>Terapia logopedyczna</li>
-                <li>Wsparcie dla rodziców</li>
-                <li>Warsztaty jakieś no nie pamiętam jakie są ich tam nazwy</li>
-            </ul>
-        </section>
-    </main>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/custom.js"></script>
 
-    <!-- ===============================
-         STOPKA
-         =============================== -->
-    <footer>
-        <p>&copy; 2025 Fundacja RiRi. Wszelkie prawa zastrzeżone.</p>
-    </footer>
-
-    <!-- Podłączenie pliku JS -->
-    <script src="js/script.js"></script>
-</body>
+    </body>
 </html>
