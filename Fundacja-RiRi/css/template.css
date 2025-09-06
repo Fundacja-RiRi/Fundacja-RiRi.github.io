@@ -377,7 +377,7 @@ strong {
 }
 
 .logo {
-  width: 300px;
+  width: 100px;
   height: auto;
 }
 
@@ -1341,11 +1341,13 @@ blockquote::before {
 
 
 /*---------------------------------------
-  SOCIAL ICON               
+  SOCIAL ICON AND CONTACT INFO
 -----------------------------------------*/
+
 .social-icon {
-  margin: 0;
-  padding: 0;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
 }
 
 .social-icon-item {
@@ -1354,24 +1356,25 @@ blockquote::before {
   vertical-align: top;
 }
 
-.social-icon-link {
-  background: var(--site-footer-bg-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--copyright-font-size);
-  display: block;
-  margin-right: 5px;
-  text-align: center;
-  width: 35px;
-  height: 35px;
-  line-height: 38px;
+.contact-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 10px;
+    font-size: 1.2em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, transform 0.2s;
+    margin: 0 auto;
+    text-decoration: none;
 }
-
-.social-icon-link:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
+.contact-btn img {
+    display: block;
+    margin: 0 auto 10px auto;
 }
-
 
 /*---------------------------------------
   RESPONSIVE STYLES               
