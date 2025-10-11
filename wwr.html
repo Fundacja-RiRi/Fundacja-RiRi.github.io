@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="64x64">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundacja RiRi</title>
@@ -9,32 +10,16 @@
 </head>
 <body>
     <!-- BACKGROUND SHAPES -->
-    <div class="bg-shape bg-shape-1"></div> <!-- Green -->
-    <div class="bg-shape bg-shape-2"></div> <!-- Yellow -->
-    <div class="bg-shape bg-shape-3"></div> <!-- Blue -->
-    <div class="bg-shape bg-shape-4"></div> <!-- Pink -->
+    <div id="blobs-container"></div>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="images/logo.png" alt="Fundacja RiRi">
-                <span>Fundacja RiRi</span>
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="test.html">O nas</a></li>
-                <li><a href="oferta.html">Oferta</a></li>
-                <li><a href="wwr.html">WWR</a></li>
-                <li><a href="dokumenty-do-pobrania.html">Dokumenty do pobrania</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="aktualnosci.html">Aktualności</a></li>
-            </ul>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main>
         <section class="wwr-section">
-            <h1 class="wwr-title">Wczesne Wspomaganie Rozwoju</h1>
+            <div class="wwr-hero-title-new" style="background-image: url('images/reklamowe/dwojka10.jpg');">
+                <span class="wwr-hero-title-box-new">Wczesne Wspomaganie Rozwoju</span>
+            </div>
             <p>
                 Wczesne Wspomaganie Rozwoju przeznaczone jest dla dzieci z różnorodnymi trudnościami, takimi jak: niepełnosprawność intelektualna, ruchowa, autyzm, zaburzenia wzroku czy słuchu, a także opóźnienia w rozwoju mowy czy motoryki.
             </p>
@@ -58,15 +43,12 @@
             <p>
                 Po otrzymaniu opinii, możesz skorzystać z bezpłatnych zajęć WWR w placówkach takich jak MY. Zapraszamy do kontaktu.
             </p>
-            <div class="wwr-gallery">
-                <img src="images/reklamowe/dwojka10.jpg">
-                <img src="images/reklamowe/gniotek4.jpg">
-                <img src="images/reklamowe/swiatelka.jpg">
-            </div>
         </section>
 
         <section class="wwr-section">
-            <h2 class="wwr-title">Terapia pedagogiczna</h2>
+            <div class="wwr-hero-title-new" style="background-image: url('images/reklamowe/rysowanie4.jpg');">
+                <span class="wwr-hero-title-box-new">Terapia pedagogiczna</span>
+            </div>
             <p>
                 Terapia pedagogiczna jest przeznaczona głównie dla dzieci i młodzieży z trudnościami w nauce, takich jak dysleksja, dysgrafia, dyskalkulia, problemy z koncentracją czy nieharmonijny rozwój, ale także dla dzieci ze wspomnianymi zaburzeniami, jak ADHD, czy z problemami emocjonalnymi lub społecznymi, wpływającymi na funkcjonowanie w szkole. Terapia pomaga rozwijać deficyty, wspiera wszechstronny rozwój i buduje pewność siebie, wyrównując szanse edukacyjne.
             </p>
@@ -88,13 +70,12 @@
                     <strong>Dzieci w trudnych sytuacjach życiowych:</strong> po dłuższej nieobecności w szkole, po chorobie, w wyniku zmian otoczenia lub trudnych wydarzeń rodzinnych, potrzebujące wsparcia w powrocie do równowagi i odbudowaniu poczucia sprawczości.
                 </li>
             </ul>
-            <div class="wwr-photo">
-                <img src="images/reklamowe/rysowanie4.jpg">
-            </div>
         </section>
 
         <section class="wwr-section">
-            <h2 class="wwr-title">Terapia psychologiczna</h2>
+            <div class="wwr-hero-title-new" style="background-image: url('images/reklamowe/dwojka6.jpg');">
+                <span class="wwr-hero-title-box-new">Terapia psychologiczna</span>
+            </div>
             <p>
                 Terapia psychologiczna dla dzieci wskazana jest w przypadku problemów z emocjami (lęk, depresja, agresja), zachowaniem (ADHD, tiki, problemy w relacjach), rozwoju (opóźnienia, zaburzenia spektrum autyzmu), a także w reakcji na trudne wydarzenia życiowe, takie jak trauma czy rozwód rodziców. Stosuje się różnorodne metody, w tym terapię poznawczo-behawioralną (CBT), terapię psychodynamiczną, terapię przez zabawę oraz terapię systemową, aby pomóc dziecku radzić sobie z trudnościami i wspierać jego rozwój.
             </p>
@@ -107,13 +88,12 @@
                 <li><strong>Sytuacje kryzysowe:</strong> przeżywanie stresujących wydarzeń, takich jak rozwód rodziców, przeprowadzka, śmierć bliskiej osoby, czy inne sytuacje traumatyczne.</li>
                 <li><strong>Podejrzenie ADHD:</strong> nadpobudliwość psychoruchowa, problemy z koncentracją i wytrwałością w działaniu.</li>
             </ul>
-            <div class="wwr-photo">
-                <img src="images/reklamowe/dwojka6.jpg">
-            </div>
         </section>
 
         <section class="wwr-section">
-            <h2 class="wwr-title">Terapia logopedyczna</h2>
+            <div class="wwr-hero-title-new" style="background-image: url('images/reklamowe/banki.jpg');">
+                <span class="wwr-hero-title-box-new">Terapia logopedyczna</span>
+            </div>
             <p>
                 Terapia logopedyczna skierowana jest dla dzieci, które mają trudności w rozwoju mowy lub komunikacji, na przykład w przypadku opóźnionego rozwoju mowy, wad wymowy (np. seplenienie, rotacyzm), jąkania, problemów z rozumieniem języka, trudności w czytaniu i pisaniu, problemów z połykaniem, zaburzeń neurologicznych (np. po udarze, w autyzmie) czy wad aparatu mowy (np. rozszczep wargi). Wskazaniem do wizyty u logopedy jest każda sytuacja, gdy rodzic ma wątpliwości dotyczące prawidłowego rozwoju mowy dziecka w porównaniu do rówieśników.
             </p>
@@ -129,13 +109,12 @@
                 <li>Zaburzenia ze spektrum autyzmu (ASD) – dzieci z autyzmem często mają trudności w rozumieniu i używaniu języka.</li>
                 <li>Złożone niepełnosprawności</li>
             </ul>
-            <div class="wwr-photo">
-                <img src="images/reklamowe/banki.jpg">
-            </div>
         </section>
 
         <section class="wwr-section">
-            <h2 class="wwr-title">Terapia integracji sensorycznej</h2>
+            <div class="wwr-hero-title-new" style="background-image: url('images/reklamowe/pilka.jpg');">
+                <span class="wwr-hero-title-box-new">Terapia integracji sensorycznej</span>
+            </div>
             <p>
                 Terapia integracji sensorycznej (SI) przeznaczona jest przede wszystkim dla dzieci, ale także dorosłych, którzy doświadczają trudności z prawidłowym odbiorem i reakcją na bodźce zmysłowe. Wskazania obejmują nadwrażliwość lub niedostateczną wrażliwość na dotyk, dźwięki czy światło, problemy z koncentracją, koordynacją ruchową, równowagą, a także trudności w nawiązywaniu relacji społecznych. Terapia jest pomocna w przypadku zaburzeń takich jak: zaburzenia ze spektrum autyzmu, ADHD, zespół Downa, dyspraksja, a także jako działania profilaktyczne u dzieci z grupy ryzyka.
             </p>
@@ -146,14 +125,12 @@
                 <li><strong>Dzieci z trudnościami w koncentracji i zachowaniu:</strong> Problemy z koncentracją uwagi w szkole. Nadmierne pobudzenie lub apatia. Problemy z funkcjonowaniem w grupie rówieśniczej.</li>
                 <li><strong>Dzieci z chorobami i zaburzeniami rozwojowymi:</strong> Autyzm, zespół Aspergera. ADHD, zespół Downa. Mózgowe porażenie dziecięce (MPDz). Dzieci z grupy ryzyka (wcześniactwo, zagrożona ciąża, czynniki dziedziczne).</li>
             </ul>
-            <div class="wwr-gallery">
-                <img src="images/reklamowe/pilka.jpg">
-                <img src="images/wwr-si2.jpg" alt="Nie mam zdjęcia dziecka na wałku">
-            </div>
         </section>
 
         <section class="wwr-section">
-            <h2 class="wwr-title">Terapia fizjoterapeutyczna</h2>
+            <div class="wwr-hero-title-new" style="background-image: url('images/reklamowe/walek.jpg');">
+                <span class="wwr-hero-title-box-new">Terapia fizjoterapeutyczna</span>
+            </div>
             <p>
                 Terapia fizjoterapeutyczna jest przeznaczona dla niemowląt, dzieci i młodzieży zmagających się z różnymi problemami rozwojowymi, neurologicznymi, ortopedycznymi czy sensorycznymi, w tym m.in. z wadami postawy, opóźnieniami w rozwoju ruchowym, mózgowym porażeniem dziecięcym, a także po urazach. Fizjoterapeuci pracują z pacjentami od urodzenia do około 18. roku życia, pomagając im osiągnąć potencjał fizyczny poprzez specjalistyczne metody jak NDT Bobath czy metoda Vojty.
             </p>
@@ -172,43 +149,8 @@
 
 
     <!-- STOPKA -->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-logo-contact">
-                    <img src="images/logo.png" alt="Fundacja RiRi" class="footer-logo">
-                    <div class="footer-contact">
-                        <p><strong>Fundacja RiRi</strong></p>
-                        <p>ul. Kościuszki 108a, lokal 11<br>50-441 Wrocław</p>
-                        <p>tel: <a href="tel:+48453187333">+48 453 187 333</a></p>
-                        <p>e-mail: <a href="mailto:fundacja.riri@wp.pl">fundacja.riri@wp.pl</a></p>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Szybkie linki</h4>
-                    <ul>
-                        <li><a href="test.html">O nas</a></li>
-                        <li><a href="oferta.html">Oferta</a></li>
-                        <li><a href="wwr.html">WWR</a></li>
-                        <li><a href="dokumenty-do-pobrania.html">Dokumenty do pobrania</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                        <li><a href="aktualnosci.html">Aktualności</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Znajdź nas na</h4>
-                    <div class="footer-social-icons">
-                        <a href="https://facebook.com/FundacjaRiRi" target="_blank">
-                            <img src="images/icons/facebook.svg" alt="Facebook" class="footer-social-icon">
-                        </a>
-                        <a href="https://wa.me/48543187333" target="_blank">
-                            <img src="images/icons/whatsapp.svg" alt="WhatsApp" class="footer-social-icon">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                &copy; 2025 Fundacja RiRi. Wszelkie prawa zastrzeżone.
-            </div>
-        </footer>s
+    <footer class="footer"></footer>
+    <script src="/js/include.js"></script>
+    <script src="js/blobs.js"></script>
 </body>
 </html>

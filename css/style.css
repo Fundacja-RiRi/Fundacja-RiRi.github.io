@@ -51,37 +51,25 @@ main {
 /* =========================
    BACKGROUND SHAPES
    ========================= */
-.bg-shape {
-    position: absolute;
-    z-index: 1;
+.blob {
+    position: fixed;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+    transition: transform 0.5s ease;
 }
-.bg-shape-1 {
-    width: 20vw; min-width: 180px; max-width: 320px;
-    height: 20vw; min-height: 180px; max-height: 320px;
-    background: var(--blue);
-    border-radius: 50% 40% 60% 70%;
-    top: -80px; left: -120px;
+
+.blob svg {
+    display: block;
+    width: 100%;
+    height: auto;
 }
-.bg-shape-2 {
-    width: 12vw; min-width: 120px; max-width: 180px;
-    height: 12vw; min-height: 120px; max-height: 180px;
-    background: var(--pink);
-    border-radius: 60% 40% 60% 40%;
-    top: 120px; right: -60px;
-}
-.bg-shape-3 {
-    width: 12vw; min-width: 120px; max-width: 180px;
-    height: 12vw; min-height: 120px; max-height: 180px;
-    background: var(--green);
-    border-radius: 60% 40% 60% 40%;
-    top: 600px; left: -60px;
-}
-.bg-shape-4 {
-    width: 8vw; min-width: 80px; max-width: 120px;
-    height: 8vw; min-height: 80px; max-height: 120px;
-    background: var(--yellow);
-    border-radius: 60% 40% 60% 40%;
-    bottom: 170px; right: 0;
+
+/* Ukrycie blobów na mniejszych ekranach */
+@media (max-width: 700px) {
+    .blob {
+        display: none;
+    }
 }
 
 /* =========================
@@ -325,7 +313,7 @@ main {
 .offer-card2-icon {
     background: #fff;
     border-radius: 50%;
-    box-shadow: 4px 2px 12px rgba(70,167,213,0.10);
+    box-shadow: 4px 2px 12px var(--box-shadow-big);
     width: 56px;
     height: 56px;
     display: flex;
@@ -1059,5 +1047,59 @@ main {
         width: 90vw;
         max-width: 98vw;
         height: auto;
+    }
+}
+
+
+.wwr-hero-title-new {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center 20%;
+    border-radius: 22px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.wwr-hero-title-new::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,rgba(30,40,60,0.18) 0%,rgba(30,40,60,0.38) 100%);
+    z-index: 1;
+}
+.wwr-hero-title-box-new {
+    position: relative;
+    z-index: 2;
+    background: rgba(255,255,255,0.50);
+    color: #22335a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 18px 18px 18px 18px;
+    padding: 16px 32px 10px 32px;
+    margin: 0 0 18px 18px;
+    box-shadow: 0 2px 12px rgba(70,167,213,0.10);
+    display: inline-block;
+    max-width: 90%;
+    backdrop-filter: blur(2px);
+    letter-spacing: 0.5px;
+}
+
+/* Responsywność */
+@media (max-width: 700px) {
+    .wwr-section-new {
+        padding: 16px 4vw 12px 4vw;
+        margin: 18px 0 18px 0;
+    }
+    .wwr-hero-title-new {
+        height: 110px;
+    }
+    .wwr-hero-title-box-new {
+        font-size: 1.1rem;
+        padding: 10px 16px 6px 16px;
+        margin: 0 0 10px 10px;
     }
 }
