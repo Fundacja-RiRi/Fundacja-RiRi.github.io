@@ -1,0 +1,8 @@
+title: Poradnia RiRi
+description: Aktualności i informacje z naszej poradni
+locale: pl
+# theme: minima  # możesz użyć własnego stylu, np. z twojego HTML/CSS
+# markdown: kramdown
+collections:
+  aktualnosci:
+    output: true

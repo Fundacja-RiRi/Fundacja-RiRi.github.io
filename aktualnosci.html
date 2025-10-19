@@ -1,28 +1,48 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundacja RiRi</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
-</head>
-<body>
-    <!-- BACKGROUND SHAPES -->
-    <div id="blobs-container"></div>
+---
+layout: aktualnosci
+title: Aktualności
+---
+{% assign miesiace = "styczeń,luty,marzec,kwiecień,maj,czerwiec,lipiec,sierpień,wrzesień,październik,listopad,grudzień" | split: "," %}
 
-    <!-- NAVBAR -->
-    <nav class="navbar"></nav>
 
-    <main>
-        <h1 class="fb-posts-title">Aktualności z Facebooka</h1>
-        <div class="fb-posts">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFundacjaRiRi&tabs=timeline&width=500&height=3000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="3000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<!-- <h1 class="fb-posts-title">Aktualności</h1> -->
+
+<div class="fb-posts">
+    <!-- Post short -->
+    {% assign sorted_posts = site.aktualnosci | sort: "date" | reverse %}
+    {% for post in sorted_posts %}
+    <div class="post">
+        <h2>{{ post.title }}</h2>
+            <p class="date">{% assign m = post.date | date: "%m" | minus: 1 %}{{ post.date | date: "%d" }} {{ miesiace[m] }} {{ post.date | date: "%Y" }}</p>
+        {% if post.image %}
+        <div class="post-img">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
         </div>
-    </main>
-    <!-- STOPKA -->
-    <footer class="footer"></footer>
-    <script src="/js/include.js"></script>
-    <script src="js/blobs.js"></script>
-</body>
-</html>
+        {% endif %}
+        <div class="content">
+            {{ post.excerpt | markdownify }}
+        </div>
+        <button class="read-more btn-main" data-post-index="{{ forloop.index0 }}">Czytaj więcej</button>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Full post -->
+{% for post in sorted_posts%}
+<div class="modal" id="modal-{{ forloop.index0 }}">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <!-- HEADER -->
+        <div class="modal-header">
+            <h2>{{ post.title }}</h2>
+            <p class="date">{% assign m = post.date | date: "%m" | minus: 1 %}{{ post.date | date: "%d" }} {{ miesiace[m] }} {{ post.date | date: "%Y" }}</p>
+        </div>
+        <!-- BODY -->
+        <div class="modal-body">
+            <div class="modal-text">{{ post.content | markdownify }}</div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<script src="/js/read-more-modal.js"></script>
