@@ -52,14 +52,26 @@ main {
 }
 
 /* =========================
-   BACKGROUND SHAPES
+    BACKGROUND SHAPES
    ========================= */
-.blob {
+#blobs-container {
     position: fixed;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.5;
-    transition: transform 0.5s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* bloby nie przeszkadzają w klikaniu treści */
+    overflow: visible;
+    z-index: -1; /* za całą treścią strony */
+}
+
+.blob {
+    position: absolute;
+    will-change: transform, filter; /* optymalizacja dla płynnego ruchu i filtrów */
+    /* filter: blur(2px) brightness(0.9); lekki blur + przyciemnienie */
+    transform: translateY(0);
+    /* transition: filter 0.2s, transform 0.2s; delikatne wygładzenie przy zmianach */
+    opacity: 0.6; /* możesz dopasować indywidualnie */
 }
 
 .blob svg {

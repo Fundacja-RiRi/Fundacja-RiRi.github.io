@@ -31,6 +31,12 @@ const blobSVGs = [
     </svg>`,
     `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <path fill="#7bab4a" d="M40.2,-51.2C46.5,-42.6,42.3,-24.6,38.9,-11.6C35.5,1.4,33,9.5,30.4,20.7C27.7,31.8,24.8,46,16.2,52.8C7.6,59.5,-6.8,58.7,-16.2,52C-25.6,45.3,-30,32.6,-37.9,20.9C-45.8,9.2,-57.1,-1.4,-59.5,-14.4C-61.9,-27.5,-55.4,-42.8,-44,-50.6C-32.6,-58.3,-16.3,-58.3,0.3,-58.7C16.9,-59.1,33.9,-59.8,40.2,-51.2Z" transform="translate(100 100)" />
+    </svg>`,
+    `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#3f52a3ff" d="M48.3,-61C60,-47.8,65,-30.1,63.5,-14.7C62,0.6,53.9,13.6,47.7,30.6C41.5,47.6,37.1,68.7,26.1,73.4C15.2,78,-2.4,66.3,-20,58.4C-37.7,50.5,-55.5,46.4,-64.6,35.1C-73.8,23.8,-74.3,5.3,-69.5,-10.6C-64.7,-26.5,-54.6,-39.8,-42.2,-52.8C-29.7,-65.8,-14.9,-78.5,1.7,-80.5C18.3,-82.6,36.7,-74.1,48.3,-61Z" transform="translate(100 100)" />
+    </svg>`,
+    `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#37a756ff" d="M44.4,-55.4C54.6,-44.3,58.1,-27.6,60.3,-11.2C62.4,5.1,63.2,21,56.4,32.2C49.5,43.4,35,49.9,22.7,48.3C10.3,46.8,0.1,37.3,-13.4,33.7C-26.9,30.2,-43.8,32.6,-50.1,26.5C-56.4,20.5,-52.1,6,-44.8,-3.2C-37.6,-12.4,-27.3,-16.3,-19.3,-27.9C-11.3,-39.4,-5.7,-58.6,5.7,-65.4C17,-72.2,34.1,-66.6,44.4,-55.4Z" transform="translate(100 100)" />
     </svg>`
 
     ];
@@ -49,7 +55,7 @@ function createBlob({ svgIndex = 0, top, left, size = 20, opacity = 0.5 }) {
     container.appendChild(blob);
 }
 
-// Przykład: różne bloby w różnych miejscach
+// Dodajemy bloby
 createBlob({ svgIndex: 0, top: "12%", left: "-11%", size: 20, opacity: 0.9 });
 createBlob({ svgIndex: 1, top: "67%", left: "-14%", size: 30, opacity: 0.9 });
 createBlob({ svgIndex: 2, top: "3%", left: "88%", size: 20, opacity: 0.9 });
@@ -58,6 +64,24 @@ createBlob({ svgIndex: 4, top: "27%", left: "64%", size: 22, opacity: 0.9 });
 createBlob({ svgIndex: 5, top: "-22%", left: "51%", size: 26, opacity: 0.9 });
 createBlob({ svgIndex: 6, top: "55%", left: "13%", size: 24, opacity: 0.9 });
 createBlob({ svgIndex: 7, top: "2%", left: "10%", size: 21, opacity: 0.9 });
-createBlob({ svgIndex: 8, top: "62%", left: "74%", size: 23, opacity: 0.9 });
+createBlob({ svgIndex: 8, top: "62%", left: "78%", size: 23, opacity: 0.9 });
 createBlob({ svgIndex: 9, top: "76%", left: "45%", size: 27, opacity: 0.9 });
+createBlob({ svgIndex: 10, top: "110%", left: "10%", size: 25, opacity: 0.7 });
+createBlob({ svgIndex: 11, top: "100%", left: "90%", size: 20, opacity: 0.6 });
 
+// Płynny parallax z requestAnimationFrame
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+    lastScrollY = -window.scrollY;
+});
+
+function updateBlobs() {
+    document.querySelectorAll(".blob").forEach(blob => {
+        const speed = 0.05
+        blob.style.transform = `translateY(${lastScrollY * speed}px)`;
+    });
+    requestAnimationFrame(updateBlobs);
+}
+
+requestAnimationFrame(updateBlobs);
