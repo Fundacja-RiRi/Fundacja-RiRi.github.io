@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
 </head>
-<body>
+<body data-page="do-pobrania">
     <!-- BACKGROUND SHAPES -->
     <div id="blobs-container"></div>
 
@@ -15,46 +15,47 @@
     <nav class="navbar"></nav>
 
     <main>
-        <section class="downloads-section">
-            <h1 class="downloads-title">Dokumenty do pobrania</h1>
-            <ul class="downloads-list">
-                <li>
-                    <div class="downloads-item">
-                        <span class="downloads-name">Regulamin WWR</span>
-                        <span class="downloads-desc">Regulamin realizacji zajęć z zakresu wczesnego wspomagania rozwoju dziecka.</span>
-                        <a href="pdf/regulamin_wwr.pdf" class="downloads-btn" target="_blank">Pobierz PDF</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="downloads-item">
-                        <span class="downloads-name">Statut Niepublicznej Poradni Psychologiczno-Pedagogicznej RiRi</span>
-                        <span class="downloads-desc">Podstawowy dokument określający cele i zasady działania Poradni.</span>
-                        <a href="pdf/statut_NPPP_RiRi.pdf" class="downloads-btn" target="_blank">Pobierz PDF</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="downloads-item">
-                        <span class="downloads-name">Klauzula informacyjna</span>
-                        <span class="downloads-desc">Klauzula informacyjna dotycząca przetwarzania danych osobowych.</span>
-                        <a href="pdf/klauzula_informacyjna.pdf" class="downloads-btn" target="_blank">Pobierz PDF</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="downloads-item">
-                        <span class="downloads-name">Standardy ochrony małoletnich</span>
-                        <span class="downloads-desc">Dokument określający standardy ochrony dzieci i młodzieży w Fundacji.</span>
-                        <a href="pdf/standardy_ochrony_malotetnich.pdf" class="downloads-btn" target="_blank">Pobierz PDF</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="downloads-item">
-                        <span class="downloads-name">Wniosek WWR</span>
-                        <span class="downloads-desc">Wniosek o objęcie dziecka Wczesnym Wspomaganiem Rozwoju.</span>
-                        <a href="pdf/wniosek_do_poradni.pdf" class="downloads-btn" target="_blank">Pobierz PDF</a>
-                    </div>
-                </li>
-            </ul>
+
+        <section class="section-boxed downloads-section">
+            <div class="downloads-text">
+                <span class="downloads-name">Regulamin WWR</span>
+                <span class="downloads-desc">Regulamin realizacji zajęć z zakresu wczesnego wspomagania rozwoju dziecka.</span>
+            </div>
+            <a href="pdf/regulamin_wwr.pdf" class="button" target="_blank">Pobierz PDF</a>
         </section>
+
+        <section class="section-boxed downloads-section">
+            <div class="downloads-text">
+                <span class="downloads-name">Statut Niepublicznej Poradni Psychologiczno-Pedagogicznej RiRi</span>
+                <span class="downloads-desc">Podstawowy dokument określający cele i zasady działania Poradni.</span>
+            </div>
+            <a href="pdf/statut_NPPP_RiRi.pdf" class="button" target="_blank">Pobierz PDF</a>
+        </section>
+
+        <section class="section-boxed downloads-section">
+            <div class="downloads-text">
+                <span class="downloads-name">Klauzula informacyjna</span>
+                <span class="downloads-desc">Klauzula informacyjna dotycząca przetwarzania danych osobowych.</span>
+            </div>
+            <a href="pdf/klauzula_informacyjna.pdf" class="button" target="_blank">Pobierz PDF</a>
+        </section>
+
+        <section class="section-boxed downloads-section">
+            <div class="downloads-text">
+                <span class="downloads-name">Standardy ochrony małoletnich</span>
+                <span class="downloads-desc">Dokument określający standardy ochrony dzieci i młodzieży w Fundacji.</span>
+            </div>
+            <a href="pdf/standardy_ochrony_malotetnich.pdf" class="button" target="_blank">Pobierz PDF</a>
+        </section>
+
+        <section class="section-boxed downloads-section">
+            <div class="downloads-text">
+                <span class="downloads-name">Wniosek WWR</span>
+                <span class="downloads-desc">Wniosek o objęcie dziecka Wczesnym Wspomaganiem Rozwoju.</span>
+            </div>
+            <a href="pdf/wniosek_do_poradni.pdf" class="button" target="_blank">Pobierz PDF</a>
+        </section>
+
     </main>
 
 
@@ -63,5 +64,7 @@
     <script src="/js/include.js"></script>
     <script src="js/blobs.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="/js/navbar-active.js"></script>
+
 </body>
 </html>

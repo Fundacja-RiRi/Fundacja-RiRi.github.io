@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
-            const index = btn.dataset.postIndex; // pobieramy właściwy index
+            const index = btn.dataset.postIndex;
             const modal = document.getElementById(`modal-${index}`);
-            if(modal) modal.style.display = 'flex'; // flex, żeby wycentrować
+            if(modal) modal.style.display = 'flex';
         });
     });
 

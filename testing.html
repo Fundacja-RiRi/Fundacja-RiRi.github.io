@@ -1,100 +1,104 @@
-<!doctype html>
-<html lang="pl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bloby po bokach</title>
-
-<style>
-  html, body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    background: #fafafa;
-    overflow-x: hidden;
-  }
-
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 80px 20px;
-    position: relative;
-    z-index: 1;
-  }
-
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-
-  p {
-    line-height: 1.6;
-    color: #444;
-  }
-
-  /* Podstawowy wygląd blobów */
-  .blob {
-    position: fixed;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.5;
-    transition: transform 0.5s ease;
-  }
-
-  /* Zmniejszenie intensywności na telefonach */
-  @media (max-width: 700px) {
-    .blob { display: none; }
-  }
-</style>
-</head>
-<body>
-
-<!-- 🧠 Bloby — pozycje sterowane przez data-* -->
-<svg class="blob" data-top="10%" data-left="5%" data-size="250" data-opacity="0.5"
-  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#46A7D5"
-    d="M43.3,-53.7C51.3,-44.9,49.7,-26.7,52.8,-9.3C55.9,8.1,63.8,24.8,60.9,40.2C58,55.7,44.3,70,30.4,68.5C16.5,66.9,2.4,49.6,-13.1,41.6C-28.7,33.6,-45.5,34.8,-56.6,27.1C-67.6,19.4,-72.8,2.8,-68.6,-10.6C-64.5,-24.1,-51,-34.4,-38,-42.4C-25,-50.4,-12.5,-56,2.6,-59.1C17.6,-62.1,35.3,-62.6,43.3,-53.7Z"
-    transform="translate(100 100)" />
-</svg>
-
-<svg class="blob" data-bottom="5%" data-right="8%" data-size="300" data-opacity="0.4"
-  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#F68E5F"
-    d="M43.3,-53.7C51.3,-44.9,49.7,-26.7,52.8,-9.3C55.9,8.1,63.8,24.8,60.9,40.2C58,55.7,44.3,70,30.4,68.5C16.5,66.9,2.4,49.6,-13.1,41.6C-28.7,33.6,-45.5,34.8,-56.6,27.1C-67.6,19.4,-72.8,2.8,-68.6,-10.6C-64.5,-24.1,-51,-34.4,-38,-42.4C-25,-50.4,-12.5,-56,2.6,-59.1C17.6,-62.1,35.3,-62.6,43.3,-53.7Z"
-    transform="translate(100 100)" />
-</svg>
-
-<svg class="blob" data-top="50%" data-right="2%" data-size="200" data-opacity="0.3"
-  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#A56EF7"
-    d="M43.3,-53.7C51.3,-44.9,49.7,-26.7,52.8,-9.3C55.9,8.1,63.8,24.8,60.9,40.2C58,55.7,44.3,70,30.4,68.5C16.5,66.9,2.4,49.6,-13.1,41.6C-28.7,33.6,-45.5,34.8,-56.6,27.1C-67.6,19.4,-72.8,2.8,-68.6,-10.6C-64.5,-24.1,-51,-34.4,-38,-42.4C-25,-50.4,-12.5,-56,2.6,-59.1C17.6,-62.1,35.3,-62.6,43.3,-53.7Z"
-    transform="translate(100 100)" />
-</svg>
-
 <main>
-  <h1>Strona z blobami po bokach</h1>
-  <p>
-    To jest przykładowa treść, żeby zobaczyć jak zachowują się bloby przy przewijaniu.
-    Używamy position: fixed, więc pozostają one w tle, a treść porusza się niezależnie.
-  </p>
-  <p>
-    Możesz dodać dowolną liczbę blobów — pozycje kontrolujesz w HTML za pomocą atrybutów
-    <code>data-top</code>, <code>data-bottom</code>, <code>data-left</code>, <code>data-right</code>,
-    a także <code>data-size</code> i <code>data-opacity</code>.
-  </p>
-</main>
+        <section class="section-boxed price-section">
+            <h2>Oferta</h2>
 
-<script>
-  // 🔧 Skrypt ustawia pozycje blobów na podstawie data-atributów
-  document.querySelectorAll('.blob').forEach(blob => {
-    const { top, bottom, left, right, size, opacity } = blob.dataset;
-    if (top) blob.style.top = top;
-    if (bottom) blob.style.bottom = bottom;
-    if (left) blob.style.left = left;
-    if (right) blob.style.right = right;
-    blob.style.width = (size || 250) + 'px';
-    blob.style.opacity = opacity || 0.5;
-  });
-</script>
+            <div class="price-category">
+                <h2 class="anchor-offset" id="logopeda">Logopeda</h2>
+                <ul>
+                    <li>Konsultacja&nbsp;45 min – <strong>190 zł</strong></li>
+                    <li>Terapia / regularne zajęcia&nbsp;45 min – <strong>150 zł</strong></li>
+                    <li>Opinia/diagnoza na piśmie – <strong>150 zł</strong></li>
+                    <li>Diagnoza logopedyczna z opisem i planem terapii&nbsp;90 min – <strong>300 zł</strong></li>
+                    <li>Rediagnoza logopedyczna&nbsp;90 min – <strong>180 zł</strong></li>
+                </ul>
+            </div>
 
-</body>
-</html>
+            <div class="price-category">
+                <h2 class="anchor-offset" id="neurologopeda">Neurologopeda</h2>
+                <ul>
+                    <li>Konsultacja&nbsp;45 min – <strong>250 zł</strong></li>
+                    <li>Terapia / regularne zajęcia&nbsp;45 min – <strong>180 zł</strong></li>
+                    <li>Opinia/diagnoza na piśmie – <strong>150 zł</strong></li>
+                    <li>Diagnoza neurologopedyczna z opisem i planem terapii&nbsp;90 min – <strong>300 zł</strong></li>
+                    <li>Rediagnoza neurologopedyczna&nbsp;90 min – <strong>180 zł</strong></li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="pedagog">Pedagog</h2>
+                <ul>
+                    <li>Konsultacja&nbsp;45 min – <strong>200 zł</strong></li>
+                    <li>Terapia / regularne zajęcia&nbsp;45 min – <strong>160 zł</strong></li>
+                    <li>Opinia/diagnoza na piśmie – <strong>150 zł</strong></li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="psycholog">Psycholog</h2>
+                <ul>
+                    <li>Konsultacja psychologiczna&nbsp;45 min – <strong>200 zł</strong></li>
+                    <li>Terapia psychologiczna&nbsp;45 min – <strong>180 zł</strong></li>
+                    <li>Opinia/diagnoza na piśmie – <strong>150 zł</strong></li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="integracja-sensoryczna">Integracja sensoryczna</h2>
+                <ul>
+                    <li>Diagnoza (3 spotkania po 160 zł + opinia na piśmie 250 zł) – <strong>730 zł</strong></li>
+                    <li>Terapia&nbsp;45 min – <strong>160 zł</strong></li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="rehabilitacja-ndt-bobath">Rehabilitacja met. NDT-Bobath</h2>
+                <ul>
+                    <li>Wizyta pierwszorazowa&nbsp;45 min – <strong>180 zł</strong></li>
+                    <li>Wizyta kolejna&nbsp;45 min – <strong>160 zł</strong></li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="fizjoterapia">Fizjoterapia</h2>
+                <ul>
+                    <li>Wizyta pierwszorazowa&nbsp;45 min – <strong>180 zł</strong></li>
+                    <li>Wizyta kolejna&nbsp;45 min – <strong>160 zł</strong></li>
+                    <li>Wizyta kolejna&nbsp;30 min – <strong>110 zł</strong></li>
+                    <li>Kinesio Taping – dopłata do terapii – <strong>30 zł</strong></li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="terapia-reki">Terapia ręki</h2>
+                <ul>
+                    <li>Diagnoza&nbsp;45 min – <strong>180 zł</strong></li>
+                    <li>Terapia&nbsp;45 min – <strong>150 zł</strong></li>
+                    <li>Diagnoza z opinią na piśmie&nbsp;45 min – <strong>300 zł</strong></li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="trening-umiejetnosci-spolecznych">Trening Umiejętności Społecznych</h2>
+                <ul>
+                    <li>Diagnoza umiejętności społecznych – <strong>180 zł</strong></li>
+                    <li>Trening Umiejętności Społecznych, Sesja indywidualna – <strong>150 zł</strong></li>
+                    <li>Trening Umiejętności Społecznych, Sesja grupowa – <strong>100 zł</strong></li>
+                    <li>Trening Umiejętności Społecznych, Pakiet 10 sesji grupowych – <strong>900 zł</strong></li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="konsultacje-prawne">Konsultacje prawne</h2>
+                <ul>
+                    <li>od <strong>100 zł</strong> w zależności od problemu</li>
+                </ul>
+            </div>
+
+            <div class="price-category">
+                <h2 class="anchor-offset" id="mediacje">Mediacje</h2>
+                <ul>
+                    <li>od <strong>250 zł</strong> w zależności od problemu</li>
+                </ul>
+            </div>
+        </section>
+    </main>

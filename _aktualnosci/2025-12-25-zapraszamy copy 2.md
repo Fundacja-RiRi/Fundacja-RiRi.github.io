@@ -1,7 +1,7 @@
 ---
 title: "Zapraszamy"
 date: 2025-12-25
-image: /images/aktualnosci/brajanek.jpg
+# image: /images/aktualnosci/brajanek.jpg
 ---
 
 ### 📚✏️ Nowy rok szkolny–nowa szansa dla Twojego dziecka!✏️📚

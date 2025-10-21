@@ -4,6 +4,6 @@ function copyToClipboard(text, el) {
         const msg = el.querySelector('.copied-msg');
         msg.textContent = "Skopiowano!";
         msg.style.opacity = 1;
-        setTimeout(() => { msg.style.opacity = 0; }, 1500);
+        setTimeout(() => { msg.style.opacity = 0; }, 800);
     });
 }
