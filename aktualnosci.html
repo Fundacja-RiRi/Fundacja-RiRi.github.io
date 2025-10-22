@@ -9,7 +9,7 @@ title: Aktualności
 <section class="news-section"> 
     {% assign sorted_posts = site.aktualnosci | sort: "date" | reverse %}
     
-    <!-- Lista skróconych postów -->
+    <!-- LIST OF SHORTEN POSTS -->
     <div class="news-list">
         {% for post in sorted_posts %}
         <div class="news-card">
@@ -30,7 +30,7 @@ title: Aktualności
     </div>
 </section>
 
-<!-- Modale pełnej treści postów -->
+<!-- FULL SIZE SINGLE POST -->
 {% for post in sorted_posts %}
 <div class="modal" id="modal-{{ forloop.index0 }}">
     <div class="modal-wrapper">
