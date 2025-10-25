@@ -13,7 +13,7 @@
     --black: #1d2027;
     --white: #fff;
     --bg: #f5faff;
-    --box-shadow-small: rgba(0, 0, 0, 0.10);
+    --box-shadow-small: rgba(0, 0, 0, 0.20);
     --box-shadow-big: rgba(3, 3, 3, 0.30);
     --dim: rgba(0, 0, 0, 0.7);
     --glass: rgba(255,255,255,0.5);
@@ -143,7 +143,7 @@ main {
 .section-boxed h2 {
     font-weight: 700;
     color: var(--dark-blue);
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
     text-align: center;
 }
 
@@ -758,6 +758,12 @@ main {
     box-sizing: border-box;
 }
 
+.downloads-header-section {
+    max-width: 600px;
+    margin: 20px auto -10px auto;
+    padding: 10px 10px 10px 10px;
+}
+
 .downloads-text {
     display: flex;
     flex-direction: column;
@@ -819,6 +825,12 @@ main {
 .price-section {
     max-width: 700px;
     margin: 25px auto 25px auto;
+}
+
+.price-header-section {
+    max-width: 300px;
+    margin: 20px auto 10px auto;
+    padding: 10px 10px 10px 10px;
 }
 
 .price-category h2 {
@@ -924,6 +936,12 @@ main {
     z-index: 2;
 }
 
+.news-header-section {
+    max-width: 500px;
+    margin: 20px auto -10px auto;
+    padding: 10px 10px 10px 10px;
+}
+
 .news-list {
     display: flex;
     flex-wrap: wrap;
@@ -932,7 +950,7 @@ main {
 }
 
 .news-card {
-    flex: 1 1 30%;
+    flex: 0 1 30%;
     background: var(--bg);
     border-radius: 24px;
     box-shadow: 0 2px 16px var(--box-shadow-small);

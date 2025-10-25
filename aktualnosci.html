@@ -4,8 +4,9 @@ title: Aktualności
 ---
 {% assign miesiace = "styczeń,luty,marzec,kwiecień,maj,czerwiec,lipiec,sierpień,wrzesień,październik,listopad,grudzień" | split: "," %}
 
-
-
+<section class="section-boxed news-header-section">
+        <h1>Aktualności</h1>
+</section>
 <section class="news-section"> 
     {% assign sorted_posts = site.aktualnosci | sort: "date" | reverse %}
     
