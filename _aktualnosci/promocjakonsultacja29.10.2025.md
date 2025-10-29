@@ -4,24 +4,19 @@ date: 2025-10-29
 image: /images/aktualnosci/kalendarz.jpg
 ---
 
-#### 🌿 Od stycznia 2026 – ruszamy z bezpłatnymi zajęciami Wczesnego Wspomagania Rozwoju Dzieci! 🌼
+#### 🎉 Wyjątkowa promocja! ‼️🎁
 
 <!--more-->
 ‼️‼️
-  Z radością informujemy, że w Niepublicznej Poradni Psychologiczno-Pedagogicznej RIRI  
-  od stycznia 2026 roku rozpoczniemy realizację bezpłatnych zajęć Wczesnego Wspomagania Rozwoju Dzieci (WWRD).
+Do końca grudnia 2025 roku zapraszamy na promocyjne konsultacje ze specjalistami Fundacji RiRi!
+Pierwsza konsultacja u wybranego specjalisty – tylko 100 zł! 💬  
 
-To wyjątkowa forma wsparcia, która pomaga najmłodszym rozwijać swoje umiejętności, pewność siebie i radość z nauki,  
-a także stwarza szanse na zdobycie określonych umiejętności fizycznych, poznawczych i emocjonalnych
-jeszcze przed rozpoczęciem szkolnej przygody.
+To doskonała okazja, by skorzystać ze wsparcia psychologa, logopedy, pedagoga, fizjoterapeuty lub terapeuty integracji sensorycznej w ciepłej, 
+przyjaznej atmosferze.
 
-👶💬 Wczesne Wspomaganie to indywidualne podejście do potrzeb dziecka, praca zespołu specjalistów i ogromne wsparcie dla rodziców.
+📍 Liczba miejsc ograniczona – zapisz się już dziś i zadbaj o swój dobrostan!
 
-📅 Start zajęć: styczeń 2026
-📍 Miejsce: Niepubliczna Poradnia Psychologiczno-Pedagogiczna RIRI
-⚠️ Liczba miejsc ograniczona – decyduje kolejność zgłoszeń!
 
-👉 Rekrutacja już trwa!
-Zostało tylko kilka wolnych miejsc – nie zwlekaj i skontaktuj się z nami, aby zapisać swoje dziecko na zajęcia.
 
-💛 Bo każde dziecko zasługuje na dobry start i wsparcie w rozwoju.
+
+
