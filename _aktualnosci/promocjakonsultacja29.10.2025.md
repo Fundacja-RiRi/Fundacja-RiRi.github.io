@@ -1,13 +1,13 @@
 ---
-title: "Już w styczniu!"
-date: 2025-10-25
+title: "‼️Konsultacja w atrakcyjnej cenie‼️"
+date: 2025-10-29
 image: /images/aktualnosci/kalendarz.jpg
 ---
 
 #### 🌿 Od stycznia 2026 – ruszamy z bezpłatnymi zajęciami Wczesnego Wspomagania Rozwoju Dzieci! 🌼
 
 <!--more-->
-
+‼️‼️
   Z radością informujemy, że w Niepublicznej Poradni Psychologiczno-Pedagogicznej RIRI  
   od stycznia 2026 roku rozpoczniemy realizację bezpłatnych zajęć Wczesnego Wspomagania Rozwoju Dzieci (WWRD).
 
