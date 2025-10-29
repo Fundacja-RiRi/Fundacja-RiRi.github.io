@@ -1,7 +1,7 @@
 ---
 title: "‼️Konsultacja w atrakcyjnej cenie‼️"
 date: 2025-10-29
-image: /images/aktualnosci/kalendarz.jpg
+image: /images/aktualnosci/procent.jpeg
 ---
 
 #### 🎉 Wyjątkowa promocja! ‼️🎁
