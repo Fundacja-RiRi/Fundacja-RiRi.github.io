@@ -175,7 +175,7 @@ main {
 .section-boxed li {
     margin-bottom: 10px;
     line-height: 1.6;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: var(--dark-gray);
 }
 
@@ -195,16 +195,22 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 4vw;
+    gap: 1vw;
 }
 
 .intro-text {
     max-width: 700px;
 }
 
+.intro-text h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
 .intro-img img {
     width: 100%;
-    max-width: 340px;
+    max-width: 300px;
     height: auto;
     border-radius: 32% 68% 70% 30% / 30% 70% 30% 70%;
     object-fit: cover;
@@ -298,6 +304,64 @@ main {
 .offer-card:hover .offer-card-title,
 .offer-card:focus .offer-card-title {
     color: var(--green);
+}
+
+/* =========================
+    FAQ SECTION
+   ========================= */
+
+.faq {
+    /* margin: 0 auto; */
+    padding: 40px 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.faq-intro {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+.faq-list details {
+    background: var(--white);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--white);
+    padding: 15px 15px;
+    transition: background 0.3s ease;
+}
+
+.faq-list details:hover {
+    background: var(--bg);
+}
+
+.faq-list summary {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--dark-gray);
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-list summary::marker {
+    color: var(--blue); 
+}
+
+.faq-list details[open] summary {
+    color: var(--blue);
+}
+
+.faq-list p {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: var(--dark-gray);
 }
 
 
@@ -450,7 +514,7 @@ main {
 
 .footer-section {
     padding: 0 15px;
-    margin-bottom: 25px; 
+    margin: 25px; 
     flex-grow: 1; 
     flex-shrink: 0;
     box-sizing: border-box; 
