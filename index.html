@@ -15,7 +15,30 @@
     <div id="blobs-container"></div>
 
     <!-- NAVBAR -->
-    <nav class="navbar"></nav>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.png" alt="Fundacja RiRi">
+                <span>Fundacja RiRi</span>
+            </a>
+
+            <!-- Hamburger button -->
+            <button class="navbar-toggle" aria-label="Toggle menu">
+                ☰ 
+            </button>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html" data-page="Poradnia">Poradnia</a></li>
+                <li><a href="aktualnosci.html" data-page="aktualnosci">Aktualności</a></li>
+                <li><a href="fundacja.html" data-page="Fundacja">Fundacja</a></li>
+                <li><a href="oferta.html" data-page="oferta">Oferta</a></li>
+                <li><a href="wwr.html" data-page="wwr">WWR</a></li>
+                <li><a href="dokumenty-do-pobrania.html" data-page="do-pobrania">Dokumenty do pobrania</a></li>
+                <li><a href="kontakt.html" data-page="kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
 
     <main>
         <!-- INTRO -->
@@ -32,25 +55,53 @@
         </section>
 
         <!-- ABOUT -->
-        <section class="section-boxed" id="o-nas">
+        <section class="section-boxed">
             <div class="about-content">
                 <div class="about-text">
                     <h2>O nas</h2>
                     <p>
-                        W <strong>Poradni RiRi</strong> wierzymy, że <strong>dobrostan psychiczny</strong> to coś więcej niż brak problemów.  
-                        To harmonia pomiędzy ciałem, umysłem, emocjami i relacjami z innymi ludźmi.  
-                        Naszą misją jest wspieranie rozwoju emocjonalnego, społecznego i poznawczego dzieci, młodzieży i dorosłych.
+                        W <strong>Poradni RiRi</strong> wierzymy, że <strong>dobrostan</strong> to coś więcej niż brak problemów.  
+                        To stan harmonii pomiędzy ciałem, umysłem, emocjami i relacjami z innymi.  
+                        To poczucie wewnętrznej równowagi, dzięki któremu możemy w pełni cieszyć się codziennością i rozwijać swój potencjał.
                     </p>
+
+                    <br>
+
                     <p>
-                        Z <strong>troską i empatią</strong> prowadzimy terapie psychologiczne, pedagogiczne i logopedyczne.  
-                        Nasi <strong>psycholodzy, pedagodzy i logopedzi</strong> z Wrocławia to specjaliści, którzy potrafią słuchać, rozumieć i wspierać w procesie zmiany.
+                        Z <strong>uśmiechem i troską</strong> wspieramy <strong>dzieci, młodzież oraz dorosłych</strong> – pomagamy im odkrywać siłę spokoju, radości i relacji.  
+                        Nasz zespół specjalistów to osoby o niezwykłej wrażliwości i empatii, które potrafią słuchać, rozumieć i towarzyszyć w procesie zmiany.
                     </p>
+
+                    
+
+                    <p><strong>W naszej poradni:</strong></p>
+                    <ul>
+                        <li>🌿 prowadzimy <strong>terapie indywidualne i grupowe</strong>,</li>
+                        <li>🎨 wspieramy rozwój poprzez zabawę, relację i kreatywne działanie,</li>
+                        <li>🤝 tworzymy <strong>bezpieczną przestrzeń</strong>, w której każdy może poczuć się ważny, zauważony i akceptowany.</li>
+                    </ul>
+
+                    <br>
+
                     <p>
-                        <strong>Fundacja RiRi</strong> to miejsce, w którym rozmowa staje się początkiem zmiany,  
-                        a troska o drugiego człowieka - źródłem siły i rozwoju.
+                        <strong>Poradnia RiRi</strong> to miejsce, w którym troska o innych staje się źródłem siły,  
+                        a rozmowa - początkiem zmiany.  
+                        Zapraszamy wszystkich, którzy pragną odnaleźć spokój, zrozumienie i radość w codziennym życiu.
                     </p>
+
+                    
+
                     <p class="about-finish">
                         Bo dobrostan zaczyna się od uważności na siebie i drugiego człowieka.
+                    </p>
+                    <p>
+                        <strong>Niepubliczna Poradnia Psychologiczno Pedagogiczna RIRI</strong> została założona przez <strong>Fundację RiRi</strong> z uwagi na rosnące zapotrzebowanie na wsparcie psychologiczne i pedagogiczne społeczeństwa. 
+                        <br>
+                        <br>
+                        Dzięki współpracy wyjątkowych specjalistów, którzy na co dzień pracują zarówno z dziećmi, młodzieżą jak i dorosłymi, oferujemy rozwiązania dostosowane do wyzwań rozwojowych i życiowych, jakie napotykają na swoich ścieżkach nasi klienci.
+                    </p>
+                    <p class="about-finish">
+                        <strong>Poradnia RiRi</strong> to przestrzeń gdzie problemy dzięki wsparciu wyjątkowych osób znajdują zrozumienie i rozwiązanie.   
                     </p>
                 </div>
             </div>
@@ -73,7 +124,7 @@
         <section class="section-boxed" id="kiedy-sie-zglosic">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>W jakich sytuacjach warto zgłosić</h2>
+                    <h2>W jakich sytuacjach warto się zgłosić</h2>
                     <ul>
                         <li><strong>Problemy edukacyjne:</strong> trudności w nauce, dysleksja, dysgrafia, dyskalkulia, zaburzenia koncentracji.</li>
                         <li><strong>Problemy emocjonalne i behawioralne:</strong> lęk, agresja, wycofanie, nadpobudliwość, problemy adaptacyjne.</li>
@@ -179,33 +230,86 @@
             <div class="faq-list">
                 <details>
                     <summary>Jak mogę zapisać się na wizytę w Poradni RiRi?</summary>
-                    <p>Aby umówić wizytę, skontaktuj się z nami telefonicznie lub poprzez formularz kontaktowy. Oferujemy szybkie terminy i indywidualne podejście.</p>
+                    <p>Aby objąć dziecko Wczesnym Wspomaganiem Rozwoju w Poradni RIRI (po wcześniejszym umówieniu telefonicznym) wraz z otrzymaną opinią z publicznej poradni o potrzebie objęcia dziecka WWR. Na miejscu, rodzic wypełni Wniosek o objęcie WWR w Poradni RIRI zgodnie z otrzymaną opinią dziecka - to wystarczy do przyjęcia dziecka w poradni RIRI.</p>
                 </details>
                 <details>
-                    <summary>Czy potrzebne jest skierowanie od lekarza?</summary>
-                    <p>Nie, do naszej poradni można zgłosić się bez skierowania. Zapraszamy wszystkie osoby szukające wsparcia psychologicznego, pedagogicznego lub logopedycznego.</p>
+                    <summary>Jak otrzymać opinię o potrzebie Wczesnego Wspomagania Rozwoju dziecka?</summary>
+                    <p>
+                        Na stronie opisujemy w jaki sposób uzyskać opinię WWR.
+                        Przeczytaj więcej tutaj: <a href="wwr.html">Wczesne Wspomaganie Rozwoju</a>
+                    </p>
                 </details>
                 <details>
-                    <summary>Jak długo trwa terapia?</summary>
-                    <p>Długość terapii zależy od indywidualnych potrzeb pacjenta. Wspólnie z terapeutą ustalicie plan pracy i częstotliwość spotkań.</p>
+                    <summary>Czy WWR w RiRi jest bezpłatne?</summary>
+                    <p>Zajęcia WWR w Poradni RIRI są bezpłatne, ponieważ odbywają sę w ramach systemu edukacji i są finansowane z dotacji. Warunkiem uczestniczenia w takich zajęciach jest posiadanie przez dziecko opinii o potrzebie WWR.</p>
                 </details>
                 <details>
-                    <summary>Czy prowadzicie terapię dla dzieci z autyzmem lub ADHD?</summary>
-                    <p>Tak, nasi specjaliści mają doświadczenie w pracy z dziećmi w spektrum autyzmu oraz z ADHD. Prowadzimy terapie indywidualne i grupowe, w tym Trening Umiejętności Społecznych (TUS).</p>
+                    <summary>Czym różni się terapia logopedyczna od neurologopedycznej?</summary>
+                    <p>
+                        Obie terapie mają na celu poprawę funkcji językowych jednak różnią się zakresem działania, podejściem i obszarami specjalizacji.
+                        <br>
+                        <strong>Terapia logopedyczna</strong> skupia się głównie na korygowaniu wad wymowy, stymulowaniem rozwoju mowy i języka oraz terapii zaburzeń komunikacji wynikających z czynników funkcjonalnych lub anatomicznych.
+                        <br>
+                        <strong>Terapia neurologopedyczna</strong> potrzebna jest wówczas, gdy zaburzenia mowy są wynikiem uszkodzeń układu nerwowego. Taka terapia wymaga indywidualnego podejścia, dostosowanego do specyfiki schorzenia
+                    </p>
                 </details>
                 <details>
-                    <summary>Gdzie znajduje się poradnia?</summary>
-                    <p>Niepubliczna Poradnia Psychologiczno-Pedagogiczna RiRi mieści się w centrum Wrocławia - zaledwie 10 minut spacerem od Dworca Głównego.</p>
+                    <summary>Jak pomaga pedagog w trudnościach szkolnych?</summary>
+                    <p>Pedagog pomaga uczniom w trudnościach z opanowaniem podstawowych umiejętności szkolnych, tj czytanie, pisanie, liczenie. Wspiera rozwój uczniów poprzez badanie potrzeb i możliwości uczniów, pomaga rozwiązywać problemy pedagogiczno-wychowawcze, pomaga rozwiązywać konflikty pomiędzy uczniami.</p>
                 </details>
             </div>
         </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer"></footer>
-    <script src="/js/include.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section footer-contact-info">
+                <img src="images/logo.png" alt="Fundacja RiRi - Logo" class="footer-logo">
+                <div class="footer-contact">
+                    <p class="foundation-name"><strong>Fundacja RiRi</strong></p>
+                    <p>ul. Kościuszki 108a, lokal 11<br>50-441 Wrocław</p>
+                    <p>tel: +48 453 187 333</p>
+                    <p>e-mail: fundacja.riri@wp.pl</p>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h4 class="footer-heading">Szybkie linki</h4>
+                <ul>
+                    <li><a href="index.html">Poradnia</a></li>
+                    <li><a href="aktualnosci.html">Aktualności</a></li>
+                    <li><a href="fundacja.html" data-page="Fundacja">Fundacja</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="wwr.html">WWR</a></li>
+                    <li><a href="dokumenty-do-pobrania.html">Dokumenty do pobrania</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-social">
+                <h4 class="footer-heading">Znajdź nas też na</h4>
+                <div class="footer-social-icons">
+                    <a href="https://facebook.com/FundacjaRiRi" target="_blank" aria-label="Facebook Fundacji RiRi">
+                        <img src="images/icons/facebook.svg" alt="Facebook" class="footer-social-icon">
+                    </a>
+                    <a href="https://wa.me/48453187333" target="_blank" aria-label="WhatsApp Fundacji RiRi">
+                        <img src="images/icons/whatsapp.svg" alt="WhatsApp" class="footer-social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Fundacja RiRi. Wszelkie prawa zastrzeżone.
+        </div>
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <!-- <script src="/js/include.js"></script> -->
     <script src="js/blobs.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="/js/navbar-active.js"></script>
+    <script src="js/navbar-active.js"></script>
 </body>
 </html>
