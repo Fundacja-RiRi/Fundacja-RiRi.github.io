@@ -17,6 +17,7 @@
     --box-shadow-big: rgba(3, 3, 3, 0.30);
     --dim: rgba(0, 0, 0, 0.7);
     --glass: rgba(255,255,255,0.5);
+    --cookie-glass: rgba(239, 141, 166, 0.7);
 }
 
 /* =========================
@@ -110,6 +111,93 @@ main {
         padding: 24px 12px;
     }
 }
+
+/* =========================
+    COOKIES BANNER
+   ========================= */
+.cookie-card {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 300px;
+    background: var(--white);
+    color: var(--dark-gray);
+    border-radius: 20px;
+    box-shadow: 0 4px 25px var(--box-shadow-big);
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.cookie-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.cookie-card h3 {
+    margin: 0;
+    font-size: 20px;
+    color: var(--dark-blue);
+}
+
+.cookie-card p {
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin: 10px 0 20px 0;
+}
+
+.cookie-card a {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.cookie-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 14px;
+    background: var(--dark-blue);
+    color: var(--white);
+    width: 100%;
+}
+
+.cookie-btn:hover {
+    background: var(--pink);
+    color: var(--dark-blue);
+}
+
+.cookie-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.cookie-close:hover {
+    color: #000;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 /* =========================
@@ -516,7 +604,6 @@ main {
     background-color: var(--dark-blue);
     color: var(--white);
     padding: 15px 0 0 0;
-    font-family: 'Montserrat', Arial, sans-serif;
     flex-shrink: 0;
     position: relative;
     z-index: 3;
@@ -637,12 +724,34 @@ main {
 
 /* --- Copyright --- */
 .footer-bottom {
-    text-align: center;
     background-color: var(--black);
     color: var(--white);
     padding: 12px 20px; 
     font-size: 0.75em;
     letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-bottom .copyright {
+    margin: 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.footer-bottom .privacy-link {
+    position: absolute;
+    right: 20px;
+    color: var(--white);
+    text-decoration: none;
+    /* font-size: 0.75em; */
+    transition: color 0.2s;
+}
+
+.footer-bottom .privacy-link:hover {
+    color: var(--pink);
 }
 
 @media (max-width: 950px) {
@@ -680,6 +789,7 @@ main {
     .footer-social-icons {
         justify-content: center;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -708,6 +818,17 @@ main {
     
     .footer-links ul {
         text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;  /* stack items vertically */
+        text-align: center;
+        position: static;        /* disable absolute positioning */
+    }
+
+    .footer-bottom .privacy-link {
+        position: static;
+        margin-top: 6px;         /* small spacing below copyright */
     }
 }
 

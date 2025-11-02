@@ -1,0 +1,24 @@
+# robots.txt for https://riri.pl
+
+User-agent: *
+
+# --- Disallow internal Jekyll folders ---
+Disallow: /_layouts/
+Disallow: /_aktualnosci/
+
+# --- Allow public assets ---
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /pdf/
+
+# --- Block any hidden or temporary files ---
+Disallow: /tmp/
+Disallow: /components/
+Disallow: /wip.html
+
+# --- Crawl delay (optional, polite to smaller bots) ---
+# Crawl-delay: 10
+
+# --- Sitemap for SEO ---
+Sitemap: https://riri.pl/sitemap.xml

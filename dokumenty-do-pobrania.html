@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8E0ZRLJVHK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8E0ZRLJVHK');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pobierz niezbędne dokumenty Fundacji RiRi: formularze zgłoszeniowe, regulaminy i informacje dla rodziców.">
-    <title>Fundacja RiRi</title>
+    <title>Dokumenty do pobrania Fundacji RiRi</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="64x64">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 </head>
 <body data-page="do-pobrania">
     <!-- BLOBS -->
@@ -27,9 +38,9 @@
             </button>
 
             <ul class="navbar-menu">
-                <li><a href="index.html" data-page="Poradnia">Poradnia</a></li>
+                <li><a href="index.html" data-page="poradnia">Poradnia</a></li>
                 <li><a href="aktualnosci.html" data-page="aktualnosci">Aktualności</a></li>
-                <li><a href="fundacja.html" data-page="Fundacja">Fundacja</a></li>
+                <li><a href="fundacja.html" data-page="fundacja">Fundacja</a></li>
                 <li><a href="oferta.html" data-page="oferta">Oferta</a></li>
                 <li><a href="wwr.html" data-page="wwr">WWR</a></li>
                 <li><a href="dokumenty-do-pobrania.html" data-page="do-pobrania">Dokumenty do pobrania</a></li>
@@ -54,7 +65,7 @@
 
         <section class="section-boxed downloads-section">
             <div class="downloads-text">
-                <span class="downloads-name">Statut Niepublicznej Poradni Psychologiczno-Pedagogicznej RiRi</span>
+                <span class="downloads-name">Statut Niepublicznej Poradni Psychologiczno Pedagogicznej RiRi</span>
                 <span class="downloads-desc">Podstawowy dokument określający cele i zasady działania Poradni.</span>
             </div>
             <a href="pdf/statut_NPPP_RiRi.pdf" class="button" target="_blank">Pobierz PDF</a>
@@ -83,7 +94,6 @@
             </div>
             <a href="pdf/wniosek_do_poradni.pdf" class="button" target="_blank">Pobierz PDF</a>
         </section>
-
     </main>
 
 
@@ -117,10 +127,10 @@
             <div class="footer-section footer-social">
                 <h4 class="footer-heading">Znajdź nas też na</h4>
                 <div class="footer-social-icons">
-                    <a href="https://facebook.com/FundacjaRiRi" target="_blank" aria-label="Facebook Fundacji RiRi">
+                    <a href="https://facebook.com/FundacjaRiRi" target="_blank" rel="noopener noreferrer" aria-label="Facebook Fundacji RiRi">
                         <img src="images/icons/facebook.svg" alt="Facebook" class="footer-social-icon">
                     </a>
-                    <a href="https://wa.me/48453187333" target="_blank" aria-label="WhatsApp Fundacji RiRi">
+                    <a href="https://wa.me/48453187333" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Fundacji RiRi">
                         <img src="images/icons/whatsapp.svg" alt="WhatsApp" class="footer-social-icon">
                     </a>
                 </div>
@@ -128,14 +138,29 @@
         </div>
 
         <div class="footer-bottom">
-            &copy; 2025 Fundacja RiRi. Wszelkie prawa zastrzeżone.
+            <p class="copyright">&copy; 2025 Fundacja RiRi.</p>
+            <a href="polityka-prywatnosci.html" class="privacy-link">Polityka prywatności</a>
         </div>
     </footer>
+
+    <!-- COOKIES -->
+    <div id="cookie-banner" class="cookie-card">
+        <button id="cookie-close" class="cookie-close" aria-label="Zamknij">&times;</button>
+        <div class="cookie-icon">🍪</div>
+        <h3>Cookies!</h3>
+        <p>
+            Używamy plików cookies, aby poprawić Twoje doświadczenie. Klikając „Akceptuję”, zgadzasz się na ich użycie zgodnie z naszą 
+            <a href="/polityka-prywatnosci.html" target="_blank" rel="noopener noreferrer">polityką prywatności</a>.
+        </p>
+        <button id="cookie-accept" class="cookie-btn primary">Akceptuję</button>
+    </div>
+
     <!-- SCRIPTS -->
     <!-- <script src="/js/include.js"></script> -->
-    <script src="js/blobs.js"></script>
-    <script src="js/hamburger.js"></script>
-    <script src="js/navbar-active.js"></script>
+    <script src="js/cookie-banner.js" defer></script>
+    <script src="js/blobs.js" async></script>
+    <script src="js/hamburger.js" async></script>
+    <script src="js/navbar-active.js" async></script>
 
 </body>
 </html>
