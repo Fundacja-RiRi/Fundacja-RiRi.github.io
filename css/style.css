@@ -126,7 +126,7 @@ main {
     box-shadow: 0 4px 25px var(--box-shadow-big);
     padding: 20px;
     text-align: center;
-    z-index: 3;
+    z-index: 2;
     display: none;
     animation: slideUp 0.5s ease forwards;
 }
