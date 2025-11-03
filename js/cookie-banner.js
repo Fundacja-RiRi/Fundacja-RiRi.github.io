@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function loadAnalytics() {
         const script = document.createElement("script");
-        script.src = "https://www.googletagmanager.com/gtag/js?id=G-8E0ZRLJVHK"; // ← zamień na swój ID
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-8E0ZRLJVHK";
         script.async = true;
         document.head.appendChild(script);
 
