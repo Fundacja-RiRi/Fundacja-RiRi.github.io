@@ -1,7 +1,7 @@
 ---
-title: "Bezpłatne zajęcia WWR"
-date: 2025-10-25
-image: /images/aktualnosci/kalendarz.webp
+title: "Metoda Bobath"
+date: 2025-12-02
+image: /images/aktualnosci/bobath.webp
 ---
 
 #### Metoda Bobath – delikatna terapia, która pomaga „nauczyć ciało” prawidłowego ruchu 🧠 👣
