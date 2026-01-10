@@ -468,7 +468,7 @@ main {
 }
 
 .navbar-container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 32px;
     height: 70px;
@@ -531,7 +531,13 @@ main {
     color: var(--dark-blue);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1650px) {
+    .navbar-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1450px) {
     .navbar-container {
         position: relative;
     }
@@ -1332,5 +1338,68 @@ main {
     @media (min-width: 601px) and (max-width: 900px) {
     .modal-wrapper {
         max-width: 90%;
+    }
+}
+
+/* =========================
+    SUPPORT SECTION
+   ========================= */
+
+
+.support-section {
+    max-width: 800px;
+}
+
+.support-section h1, h2 {
+    margin-top: 0;
+}
+
+.krs-container {
+    background-color: var(--bg);
+    border: 1px solid var(--blue);
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 10px var(--box-shadow-big);
+}
+.krs-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.krs-label {
+    font-weight: 600;
+    color: var(--gray);
+    margin-right: 8px;
+}
+
+.krs-number {
+    display: inline-block;
+    background-color: var(--bg);
+    color: var(--dark-blue); 
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media (max-width: 550px) {
+    .krs-container {
+        text-align: center;
+    }
+
+    .krs-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .krs-label, .krs-number {
+        text-align: center;
     }
 }
