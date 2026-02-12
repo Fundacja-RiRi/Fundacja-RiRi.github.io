@@ -3,7 +3,6 @@
 Fundacja RiRi to organizacja non-profit prowadząca poradnię psychologiczno-pedagogiczną we Wrocławiu. Strona internetowa ma na celu prezentację oferty poradni, wsparcie komunikacji z rodzicami i opiekunami oraz udostępnienie aktualności związanych z działalnością Fundacji.
 
 🌐 **Strona online:** [riri.org.pl](https://riri.org.pl)  
-💻 **Kod źródłowy:** [GitHub](https://github.com/Fundacja-RiRi/Fundacja-RiRi.github.io)  
 
 ---
 
