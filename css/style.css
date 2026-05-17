@@ -1403,3 +1403,58 @@ main {
         text-align: center;
     }
 }
+
+
+/* Style gier */
+.game-container {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border: 2px dashed #ddd;
+}
+
+/* Gra 1: Kafelki dźwiękowe */
+.sound-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+.sound-tile {
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.sound-tile:active { transform: scale(0.9); }
+.sound-tile img { width: 100%; border-radius: 8px; }
+
+/* Gra 2 i 3: Koszyczki */
+.game-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    min-height: 200px;
+    position: relative;
+}
+.basket {
+    width: 120px;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 0 0 50px 50px;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.basket.red { border-color: #ff4d4d; }
+.basket.blue { border-color: #4d94ff; }
+.draggable-item {
+    width: 50px;
+    height: 50px;
+    cursor: grab;
+    display: inline-block;
+    margin: 10px;
+}
