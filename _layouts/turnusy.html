@@ -11,36 +11,19 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aktualności Poradni Psychologiczno Pedagogicznej RIRI &ndash; najnowsze wydarzenia, informacje o terapii i działaniach wspierających rozwój najmłodszych.">
-    <title>Aktualności Poradni Psychologiczno Pedagogicznej RIRI</title>
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.ico"sizes="64x64">
+    <meta name="description" content="Turnusy wakacyjne w poradni Psychologiczno Pedagogicznej RiRi w 2026 roku. Zajęcia terapeutyczne, warsztaty i wsparcie dla dzieci i młodzieży.">
+    <title>Turnusy wakacyjne 2026 - Poradnia Psychologiczno Pedagogiczna RIRI</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" sizes="64x64">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
-    <link rel="preload" href="{{ site.baseurl }}/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="canonical" href="https://riri.org.pl/">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-    <script type="application/ld+json" async>
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Aktualności &ndash; Poradnia Psychologiczno Pedagogiczna RIRI",
-        "url": "https://riri.org.pl/aktualnosci.html",
-        "description": "Najświeższe informacje o działaniach Poradni Psychologiczno Pedagogicznej RIRI, wydarzeniach, projektach oraz inicjatywach wspierających rozwój dzieci i młodzieży.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Poradnia Psychologiczno Pedagogiczna RIRI",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://riri.org.pl/images/logo.webp"
-            }
-        },
-        "inLanguage": "pl-PL"
-    }
-    </script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body data-page="aktualnosci">
-    <!-- BACKGROUND SHAPES -->
+<body data-page="wakacyjne-turnusy">
+
+    <!-- BLOBS -->
     <div id="blobs-container"></div>
 
     <!-- NAVBAR -->
@@ -60,6 +43,7 @@
                 <li><a href="/" data-page="poradnia">Poradnia</a></li>
                 <li><a href="/aktualnosci/" data-page="aktualnosci">Aktualności</a></li>
                 <li><a href="/oferta/" data-page="oferta">Oferta</a></li>
+                <li><a href="/wakacyjne-turnusy/" data-page="wakacyjne-turnusy">Turnusy wakacyjne</a></li>
                 <li><a href="/WWR/" data-page="wwr">WWR</a></li>
                 <li><a href="/do-pobrania/" data-page="do-pobrania">Dokumenty do pobrania</a></li>
                 <li><a href="/wspieraj-nas/" data-page="wspieraj-nas">Wspieraj nas</a></li>
@@ -68,9 +52,39 @@
         </div>
     </nav>
 
-    {{ content }}
-    <main></main>
     
+    <main>
+        <!-- HERO -->
+        <section class="section-boxed" id="turnusy-wakacyjne-we-wroclawiu">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h1>Turnusy wakacyjne z Fundacją RiRi ☀️</h1>
+                    <p>Organizujemy turnusy terapeutyczne dla dzieci i młodzieży, które łączą indywidualne zajęcia z terapiami oraz grupowe aktywności.</p>
+                </div>
+                <div class="intro-img-turnusy">
+                    <img src="/images/stock/children-forest-cabin.webp" alt="Dzeci bawiące się z terapeutą klockami i piłkami w domku w lesie" class="intro-img">
+                </div>
+            </div>
+        </section>
+        
+        {{ content }}
+
+        <section class="section-boxed">
+            <h2>Dla kogo są nasze turnusy?</h2>
+            <div class="turnusy-listing">
+                <img src="/images/nowe-ikony/crab.webp" alt="Ikona kraba">
+                <ul>
+                    <li>✅ dzieci z zaburzeniami rozwojowymi ASP, ADHD</li>
+                    <li>✅ dzieci z trudnościami w zakresie mowy i komunikacji</li>
+                    <li>✅ dzieci z trudnościami w funkcjonowaniu i zachowaniu</li>
+                    <li>✅ dzieci z trudnościami w obszarze motoryki małej i dużej</li>
+                    <li>✅ dzieci z opóźnieniami w rozwoju</li>
+                </ul>
+                <img src="/images/nowe-ikony/ice-cream.webp" alt="Ikona lodów">
+            </div>
+
+        </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -131,11 +145,10 @@
     </div>
 
     <!-- SCRIPTS -->
-    <!-- <script src="{{ site.baseurl }}/js/include.js"></script> -->
-    <script src="{{ site.baseurl }}/js/blobs.js" defer></script>
-    <script src="{{ site.baseurl }}/js/read-more-modal.js" defer></script>
-    <script src="{{ site.baseurl }}/js/hamburger.js" defer></script>
-    <script src="{{ site.baseurl }}/js/navbar-active.js" defer></script>
-    <script src="{{ site.baseurl }}/js/cookie-banner.js" defer></script>
+    <!-- <script src="/js/include.js"></script> -->
+    <script src="/js/blobs.js" defer></script>
+    <script src="/js/hamburger.js" defer></script>
+    <script src="/js/navbar-active.js" defer></script>
+    <script src="/js/cookie-banner.js" defer></script>
 </body>
 </html>
