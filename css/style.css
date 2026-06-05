@@ -1062,6 +1062,13 @@ main {
     line-height: 1.6;
 }
 
+.price-category p {
+    font-size: 1.05rem;
+    color: var(--dark-gray);
+    /* margin-top: 40px; */
+    line-height: 1.6;
+}
+
 .price-category strong {
     color: var(--pink);
     font-weight: 700;
@@ -1458,3 +1465,28 @@ main {
     display: inline-block;
     margin: 10px;
 }
+
+/* =========================
+    TURNUSY SECTION
+   ========================= */
+
+.turnusy-section {
+    max-width: 1000px;
+    margin: 48px auto 48px auto;
+    padding: 0 16px;
+    z-index: 2;
+}
+
+.turnusy-header-section {
+    max-width: 500px;
+    margin: 20px auto -10px auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.turnusy-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
