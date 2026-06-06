@@ -4,7 +4,40 @@ title: Turnusy
 ---
 
 <section class="section-boxed">
-    <h1>Turnusy wakacyjne 2026</h1>
-    <p>Tutaj pojawią się plakaty guziki no wiesz to śmieszne takie</p>
+    <h1>Aktualne turnusy</h1>
 </section>
+<section class="turnusy-list news-section">
+    <div class="news-list">
+        {% for turnus in site.turnusy %}
+        <div class="news-card">
+            {% if turnus.image %}
+            <div class="news-image">
+                <img src="{{ turnus.image | relative_url }}" alt="{{ turnus.title }}">
+            </div>
+            {% endif %}
+
+            <button class="button read-more" data-post-index="{{ forloop.index0 }}">Czytaj więcej</button>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% for turnus in site.turnusy %}
+<div class="modal" id="modal-{{ forloop.index0 }}">
+    <div class="modal-wrapper">
+        <span class="modal-close">&times;</span>
+        
+        <div class="modal-header">
+            <h2>{{ turnus.title }}</h2>
+        </div>
+        
+        <div class="modal-body">
+            <div class="modal-text">{{ turnus.content | markdownify }}</div>
+        </div>
+
+    </div>
+</div>
+{% endfor %}
+
+<script src="/js/read-more-modal.js"></script>
 
