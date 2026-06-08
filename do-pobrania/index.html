@@ -19,37 +19,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
     <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="canonical" href="https://riri.org.pl/">
-    <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body data-page="do-pobrania">
     <!-- BLOBS -->
     <div id="blobs-container"></div>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="/" class="navbar-logo">
-                <img src="/images/logo.webp" alt="Fundacja RiRi">
-                <span>Fundacja RiRi</span>
-            </a>
-
-            <!-- Hamburger button -->
-            <button class="navbar-toggle" aria-label="Toggle menu">
-                ☰ 
-            </button>
-
-            <ul class="navbar-menu">
-                <li><a href="/" data-page="poradnia">Poradnia</a></li>
-                <li><a href="/aktualnosci/" data-page="aktualnosci">Aktualności</a></li>
-                <!-- <li><a href="/aac/" data-page="aac">AAC</a></li> -->
-                <li><a href="/oferta/" data-page="oferta">Oferta</a></li>
-                <li><a href="/WWR/" data-page="wwr">WWR</a></li>
-                <li><a href="/do-pobrania/" data-page="do-pobrania">Dokumenty do pobrania</a></li>
-                <li><a href="/wspieraj-nas/" data-page="wspieraj-nas">Wspieraj nas</a></li>
-                <li><a href="/kontakt/" data-page="kontakt">Kontakt</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
+    <script>
+    fetch('/components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
 
     <main>
 
@@ -100,51 +84,14 @@
 
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-
-            <div class="footer-section footer-contact-info">
-                <img src="/images/logo.webp" alt="Fundacja RiRi - Logo" class="footer-logo">
-                <div class="footer-contact">
-                    <p class="foundation-name"><strong>Fundacja RiRi</strong></p>
-                    <p>ul. Kościuszki 108a, lokal 11<br>50-441 Wrocław</p>
-                    <p>tel: +48 453 187 333</p>
-                    <p>e-mail: fundacja.riri@wp.pl</p>
-                </div>
-            </div>
-
-            <div class="footer-section footer-links">
-                <h4 class="footer-heading">Szybkie linki</h4>
-                <ul>
-                    <li><a href="/">Poradnia</a></li>
-                    <li><a href="/aktualnosci/">Aktualności</a></li>
-                    <!-- <li><a href="/aac/">AAC</a></li> -->
-                    <li><a href="/oferta/">Oferta</a></li>
-                    <li><a href="/WWR/">WWR</a></li>
-                    <li><a href="/do-pobrania/">Dokumenty do pobrania</a></li>
-                    <li><a href="/wspieraj-nas/">Wspieraj nas</a></li>
-                    <li><a href="/kontakt/">Kontakt</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section footer-social">
-                <h4 class="footer-heading">Znajdź nas też na</h4>
-                <div class="footer-social-icons">
-                    <a href="https://facebook.com/FundacjaRiRi" target="_blank" rel="noopener noreferrer" aria-label="Facebook Fundacji RiRi">
-                        <img src="/images/icons/facebook.svg" alt="Facebook" class="footer-social-icon">
-                    </a>
-                    <a href="https://wa.me/48453187333" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Fundacji RiRi">
-                        <img src="/images/icons/whatsapp.svg" alt="WhatsApp" class="footer-social-icon">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p class="copyright">&copy; 2025 Fundacja RiRi.</p>
-            <a href="/prywatnosc/" class="privacy-link">Polityka prywatności</a>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+    fetch('/components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script>
 
     <!-- COOKIES -->
     <div id="cookie-banner" class="cookie-card">

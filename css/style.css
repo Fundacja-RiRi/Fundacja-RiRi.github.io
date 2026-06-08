@@ -18,6 +18,50 @@
     --dim: rgba(0, 0, 0, 0.7);
     --glass: rgba(255,255,255,0.5);
     --cookie-glass: rgba(239, 141, 166, 0.7);
+
+    --fs-h1: 2.5rem;         /* 40px */
+    --fs-h2: 2.25rem;       /* 36px */
+    --fs-h3: 2rem;         /* 32px */
+    --fs-h4: 1.5rem;       /* 24px */
+    --fs-h5: 1.25rem;      /* 20px */
+    --fs-h6: 1.125rem;     /* 18px */
+
+    --fs-body: 1.125rem;      /* 18px */
+    --fs-small: 0.875rem;  /* 14px */
+    --fs-caption: 0.75rem; /* 12px */
+
+    --fs-hero: 3rem;       /* 48px */
+    --fs-button: 1.2rem;     /* 16.8px */
+    --fs-footer: 1.125rem;    /* 18px */
+    --fs-navbar: 1.125rem;    /* 24px */
+    
+}
+
+/* Need it faster to change font since navbar is getting busy */
+@media (max-width: 1700px) {
+    :root {
+        --fs-navbar: 1rem; /* 16px */
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+
+        --fs-h1: 2.25rem;      /* 36px */
+        --fs-h2: 1.875rem;     /* 30px */
+        --fs-h3: 1.5rem;       /* 24px */
+        --fs-h4: 1.25rem;      /* 20px */
+        --fs-h5: 1.125rem;     /* 18px */
+        --fs-h6: 1rem;         /* 16px */
+
+        --fs-body: 1rem;       /* 16px */
+        --fs-small: 0.875rem;  /* 14px */
+        --fs-caption: 0.75rem; /* 12px */
+
+        --fs-hero: 2.75rem;    /* 44px */
+        --fs-button: 0.95rem;
+        --fs-footer: 0.95rem;
+    }
 }
 
 /* =========================
@@ -25,6 +69,7 @@
    ========================= */
 html, body {
     height: 100%;
+    font-size: 100%;
     margin: 0;
     padding: 0;
     scrollbar-gutter: stable;
@@ -55,6 +100,20 @@ main {
 .anchor-offset {
     scroll-margin-top: 90px;
 }
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+
 
 /* =========================
     BLOBS
@@ -131,19 +190,28 @@ main {
     animation: slideUp 0.5s ease forwards;
 }
 
+@media (max-width: 400px) {
+    .cookie-card {
+        left: 5vw;
+        right: 5vw;
+        width: auto;
+        bottom: 3vw;
+    }
+}
+
 .cookie-icon {
-    font-size: 38px;
+    font-size: var(--fs-h2);
     margin-bottom: 10px;
 }
 
 .cookie-card h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: var(--fs-h3);
     color: var(--dark-blue);
 }
 
 .cookie-card p {
-    font-size: 14px;
+    font-size: var(--fs-small);
     color: var(--dark-gray);
     margin: 10px 0 20px 0;
 }
@@ -160,7 +228,7 @@ main {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.25s ease;
-    font-size: 14px;
+    font-size: var(--fs-button);
     background: var(--dark-blue);
     color: var(--white);
     width: 100%;
@@ -177,7 +245,7 @@ main {
     right: 12px;
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: var(--fs-h3);
     color: #666;
     cursor: pointer;
     transition: color 0.2s;
@@ -209,7 +277,7 @@ main {
     text-decoration: none;
     border-radius: 30px;
     padding: 12px 32px;
-    font-size: 1.1rem;
+    font-size: var(--fs-button);
     text-align: center;
     display: block;
     margin-top: 15px;
@@ -238,18 +306,18 @@ main {
 }
 
 .section-boxed h1 {
-    font-size: 2.6rem;
+    font-size: var(--fs-h1);
     line-height: 1.1;
 }
 
 .section-boxed h2 {
-    font-size: 2rem;
+    font-size: var(--fs-h2);
     margin-top: 0;
     margin-bottom: 24px;
 }
 
 .section-boxed p {
-    font-size: 1.1rem;
+    font-size: var(--fs-body);
     color: var(--dark-gray);
     margin-bottom: 18px;
     text-align: center;
@@ -265,7 +333,7 @@ main {
 .section-boxed li {
     margin-bottom: 10px;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: var(--fs-body);
     color: var(--dark-gray);
 }
 
@@ -293,7 +361,7 @@ main {
 }
 
 .intro-text h1 {
-    font-size: 2rem;
+    font-size: var(--fs-h1);
     margin-bottom: 16px;
     line-height: 1.1;
 }
@@ -307,11 +375,11 @@ main {
     background: var(--white);
     box-shadow: 0 4px 32px var(--box-shadow-small);
 }
-.intro-img-fundacja img {
+.intro-img-turnusy img {
     width: 100%;
     max-width: 300px;
     height: auto;
-    border-radius: 22% 58% 30% 30% / 70% 30% 60% 20%; 
+    border-radius: 32% 58% 40% 60% / 70% 30% 60% 20%; 
     object-fit: cover;
     background: var(--white);
     box-shadow: 0 4px 32px var(--box-shadow-small);
@@ -389,7 +457,7 @@ main {
 }
 
 .offer-card-title {
-    font-size: 1.08rem;
+    font-size: var(--fs-button);
     font-weight: 600;
     color: var(--dark-blue);
     text-align: center;
@@ -398,7 +466,7 @@ main {
 
 .offer-card:hover,
 .offer-card:focus {
-    transform: translateY(-6px) scale(1.04);
+    transform: translateY(-6px) scale(1.05);
 }
 
 .offer-card:hover .offer-card-title,
@@ -432,7 +500,7 @@ main {
 
 .faq-list summary {
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: var(--fs-h5);
     color: var(--dark-gray);
     cursor: pointer;
     position: relative;
@@ -462,13 +530,13 @@ main {
     box-shadow: 0 2px 12px var(--box-shadow-small);
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 4;
     font-family: 'Montserrat', Arial, sans-serif;
     transition: none;
 }
 
 .navbar-container {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0 32px;
     height: 70px;
@@ -485,7 +553,7 @@ main {
     text-decoration: none;
     color: #003366;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: var(--fs-navbar);
 }
 
 .navbar-logo img {
@@ -506,6 +574,7 @@ main {
     text-decoration: none;
     color: var(--dark-blue);
     font-weight: 600;
+    font-size: var(--fs-navbar);
     padding: 8px 12px;
     border-radius: 30px;
     transition: background 0.2s, color 0.2s;
@@ -526,18 +595,22 @@ main {
     display: none;
     background: none;
     border: none;
-    font-size: 28px;
+    font-size: var(--fs-h3);
     cursor: pointer;
     color: var(--dark-blue);
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1700px) {
     .navbar-container {
-        max-width: 90%;
+        max-width: 99%;
+        padding: 0 16px;
+    }
+    .navbar-menu {
+        gap: 8px;
     }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1350px) {
     .navbar-container {
         position: relative;
     }
@@ -552,7 +625,6 @@ main {
         background: var(--white);
         flex-direction: column;
         box-shadow: 0 2px 12px var(--box-shadow-small);
-        z-index: 2;
         align-items: center;
         border-radius: 0 0 12px 12px;
         max-height: 0;
@@ -576,13 +648,14 @@ main {
         gap: 8px;
         background: none;
         border: none;
-        font-size: 28px;
+        font-size: var(--fs-h2);
+        font-weight: 800;
         cursor: pointer;
         color: var(--dark-blue);
     }
 
     .navbar-toggle span {
-        font-size: 0.9rem;
+        font-size: var(--fs-small);
         font-weight: 500;
     }
 
@@ -634,7 +707,7 @@ main {
 
 .footer-heading {
     margin-top: 0; 
-    font-size: 1.2em;
+    font-size: var(--fs-h5);
     margin-bottom: 18px; 
     color: var(--pink);
     text-transform: uppercase;
@@ -655,7 +728,7 @@ main {
 }
 
 .footer-logo {
-    height: 100px;
+    height: 13vh;
     width: auto;
     border-radius: 8px;
     background: var(--bg);
@@ -663,19 +736,21 @@ main {
     flex-shrink: 0;
 }
 
+.foundation-name strong{
+    font-size: var(--fs-h5);
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+
 .footer-contact p {
     color: var(--bg);
-    font-size: 0.95em;
+    font-size: var(--fs-small);
     margin: 0 0 8px 0; 
     line-height: 1.4; 
     text-decoration: none;
 }
 
-.foundation-name {
-    font-size: 1em;
-    margin-bottom: 15px;
-    margin-top: 0;
-}
 
 /* --- Quick links --- */
 .footer-links {
@@ -697,7 +772,7 @@ main {
     color: var(--white);
     text-decoration: none;
     transition: color 0.2s;
-    font-size: 0.95em;
+    font-size: var(--fs-footer);
 }
 
 .footer-links a:hover {
@@ -733,7 +808,7 @@ main {
     background-color: var(--black);
     color: var(--white);
     padding: 12px 20px; 
-    font-size: 0.75em;
+    font-size: var(--fs-caption);
     letter-spacing: 0.5px;
     display: flex;
     justify-content: center;
@@ -752,7 +827,6 @@ main {
     right: 20px;
     color: var(--white);
     text-decoration: none;
-    /* font-size: 0.75em; */
     transition: color 0.2s;
 }
 
@@ -895,7 +969,7 @@ main {
     padding: 24px 28px;
     width: 150px;
     min-width: 0;
-    font-size: 1.1rem;
+    font-size: var(--fs-navbar);
     font-weight: 600;
     text-decoration: none;
     box-shadow: 0 2px 8px var(--box-shadow-small);
@@ -912,7 +986,7 @@ main {
     transform: translateX(-50%);
     background: var(--white);
     color: var(--dark-blue);
-    font-size: 0.95em;
+    font-size: var(--fs-navbar);
     border-radius: 10px;
     padding: 2px 12px;
     opacity: 0;
@@ -982,13 +1056,13 @@ main {
 
 .downloads-name {
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: var(--fs-h4);
     color: var(--dark-blue);
     margin-bottom: 6px;
 }
 
 .downloads-desc {
-    font-size: 0.95rem;
+    font-size: var(--fs-body);
     color: var(--dark-gray);
     line-height: 1.4;
 }
@@ -996,7 +1070,7 @@ main {
 .downloads-section .button {
     background: var(--blue);
     color: var(--bg);
-    font-size: 0.95rem;
+    font-size: var(--fs-button);
     font-weight: 600;
     align-self: center;
 }
@@ -1046,7 +1120,7 @@ main {
 .price-category h2 {
     margin-bottom: 10px;
     margin-top: -10px;
-    font-size: 1.8rem;
+    font-size: var(--fs-h2);
 }
 
 .price-category ul {
@@ -1054,11 +1128,22 @@ main {
     margin-bottom: -10px;
 }
 
+@media (max-width: 900px) {
+    .price-category ul {
+        text-align: center;
+    }
+}
+
 .price-category li {
-    font-size: 1.05rem;
+    font-size: var(--fs-body);
     color: var(--dark-gray);
     margin-bottom: 10px;
     padding-left: 0;
+    line-height: 1.6;
+}
+
+/* for Turnusy comment */
+.price-category p { 
     line-height: 1.6;
 }
 
@@ -1092,7 +1177,7 @@ main {
     box-sizing: border-box;       
     background: var(--glass);
     color: var(--dark-blue);
-    font-size: 1.5rem;
+    font-size: var(--fs-h2);
     font-weight: 700;
     border-radius: 18px;
     padding: 16px 32px;
@@ -1120,7 +1205,7 @@ main {
 .wwr-section li {
     margin-bottom: 10px;
     line-height: 1.5;
-    font-size: 1.05rem;
+    font-size: var(--fs-body);
 }
 
 @media (max-width: 700px) {
@@ -1129,7 +1214,6 @@ main {
         border-radius: 16px;
     }
     .wwr-title-box {
-        font-size: 1.2rem;
         padding: 12px 20px 8px 20px;
         margin: 0 0 12px 12px;
     }
@@ -1176,14 +1260,14 @@ main {
 }
 
 .news-title {
-    font-size: 1.6rem;
+    font-size: var(--fs-h3);
     color: var(--dark-blue);
     margin: 16px;
     text-align: center;
 }
 
 .news-date {
-    font-size: 0.95rem;
+    font-size: var(--fs-small);
     color: var(--dark-gray);
     margin: 0 16px 12px 16px;
     text-align: right;
@@ -1215,7 +1299,7 @@ main {
     flex: 1;
     margin: 0 16px 16px 16px;
     color: var(--dark-gray);
-    font-size: 1rem;
+    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: center;
 }
@@ -1237,7 +1321,7 @@ main {
 .modal {
     display: none;
     position: fixed;
-    z-index: 5;
+    z-index: 6;
     inset: 0; 
     width: 100%;
     height: 100%;
@@ -1265,7 +1349,7 @@ main {
     position: absolute;
     top: 16px;
     right: 24px;
-    font-size: 32px;
+    font-size: var(--fs-h1);
     color: var(--black);
     cursor: pointer;
     transition: color 0.2s;
@@ -1276,7 +1360,7 @@ main {
 }
 
 .modal-header h2 {
-    font-size: 2rem;
+    font-size: var(--fs-h2);
     color: var(--dark-blue);
     margin: 0;
     text-align: center;
@@ -1285,7 +1369,7 @@ main {
 }
 
 .modal-header .news-date {
-    font-size: 1rem;
+    font-size: var(--fs-body);
     color: var(--dark-gray);
     margin-top: 4px;
 }
@@ -1297,7 +1381,7 @@ main {
 }
 
 .modal-text {
-    font-size: 1.1rem;
+    font-size: var(--fs-body);
     line-height: 1.6;
     color: var(--dark-gray);
 }
@@ -1315,18 +1399,13 @@ main {
         margin: 0;
     }
 
-    .modal-header h2 {
-        font-size: 1.5rem;
-    }
 
     .modal-close {
-        font-size: 28px;
         top: 10px;
         right: 16px;
     }
 
     .modal-text {
-        font-size: 1rem;
         line-height: 1.5;
     }
 
@@ -1385,7 +1464,7 @@ main {
     padding: 6px 10px;
     border-radius: 6px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: var(--fs-body);
 }
 
 @media (max-width: 550px) {
@@ -1457,4 +1536,144 @@ main {
     cursor: grab;
     display: inline-block;
     margin: 10px;
+}
+
+/* =========================
+    TURNUSY SECTION
+   ========================= */
+
+.turnusy-listing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto auto auto auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.turnusy-listing img {
+    width: 100%;
+    max-width: 15%;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+}
+
+.turnusy-listing ul {
+    list-style: inside " ✅ ";
+    /* padding-left: 40px; */
+}
+
+@media (max-width: 750px) {
+    .turnusy-listing img {
+        display: none;
+    }
+
+    .turnusy-listing {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .turnusy-listing ul {
+        text-align: center;
+    }
+}
+
+.turnusy p {
+    font-size: var(--fs-body);
+    color: var(--dark-gray);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.turnusy span {
+    font-size: var(--fs-button);
+}
+
+.turnusy .offer-card {
+    width: 200px;
+    min-height: 150px;
+}
+
+.turnusy img {
+    width: 64px;
+    height: 64px;
+}
+
+.signup-section {
+    flex: 2;
+    padding: 40px 20px auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+}
+
+@media (max-width: 900px) {
+    .signup-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.signup-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-image img {
+    width: 15vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 70% 40% 35% 60% / 50% 40% 60% 70%;
+}
+
+.signup-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .signup-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .signup-image {
+        order: -1;
+    }
+
+    .signup-image img {
+        width: 30vw;
+    }
+}
+
+.turnusy-list .news-image {
+    height: auto;
+    /* margin: 20px 20px 40px 20px; */
+    padding: 20px 10px 40px 10px;
+}
+
+.turnusy-list .news-image img {
+    object-fit: scale-down;
+    border-radius: 18px;
+}
+
+.turnusy-list .news-card {
+    flex: 0 1 45%;
+}
+
+@media (max-width: 900px) {
+    .turnusy-list .news-card { flex: 1 1 45%; }
+}
+
+@media (max-width: 600px) {
+    .turnusy-list .news-card { flex: 1 1 100%; }
 }

@@ -6,3 +6,5 @@ locale: pl
 collections:
   aktualnosci:
     output: true
+  turnusy:
+    output: true
