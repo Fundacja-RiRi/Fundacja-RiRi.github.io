@@ -403,6 +403,11 @@ h3 {
     max-width: 700px;
 }
 
+.about-text .center {
+    text-align: center;
+}
+
+
 /* =========================
     OFFER
    ========================= */
