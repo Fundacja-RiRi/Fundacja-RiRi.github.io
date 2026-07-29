@@ -341,7 +341,7 @@ h3 {
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s;
-    z-index: 1000;
+    z-index: 100;
     pointer-events: none;
 }
 
@@ -354,10 +354,20 @@ h3 {
     pointer-events: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .tooltip-text {
-        width: 220px;
-        font-size: 13px;
+        width: 240px;
+        font-size: 14px;
+
+        /* środek ekranu */
+        position: fixed;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+
+        /* zabezpieczenie przed małymi ekranami */
+        max-width: calc(100vw - 40px);
     }
 }
 
