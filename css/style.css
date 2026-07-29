@@ -309,12 +309,14 @@ h3 {
 }
 
 .tooltip-btn {
+    vertical-align: middle;
+    top: -3px;
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin-left: 5px;
     border: none;
     border-radius: 50%;
@@ -327,48 +329,40 @@ h3 {
 }
 
 .tooltip-text {
-    position: absolute;
-    bottom: 130%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 240px;
-    padding: 10px;
-    border-radius: 8px;
-    background: var(--dark-gray);
-    color: var(--white);
-    font-size: 14px;
-    line-height: 1.4;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s;
-    z-index: 100;
-    pointer-events: none;
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%); /* wartość startowa, JS ją nadpisze gdy trzeba */
+  width: 240px;
+  max-width: calc(100vw - 40px);
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--dark-gray);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.4;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s;
+  z-index: 100;
+  pointer-events: none;
 }
 
-/* Komputer */
 .tooltip-btn:hover .tooltip-text,
 .tooltip-btn:focus .tooltip-text,
 .tooltip-btn.active .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
+/* Telefon — bez transform: translate(-50%, -50%), JS przejmuje oś X */
 @media (max-width: 600px) {
-    .tooltip-text {
-        width: 240px;
-        font-size: 14px;
-
-        /* środek ekranu */
-        position: fixed;
-        left: 50%;
-        top: 50%;
-
-        transform: translate(-50%, -50%);
-
-        /* zabezpieczenie przed małymi ekranami */
-        max-width: calc(100vw - 40px);
-    }
+  .tooltip-text {
+    width: 240px;
+    font-size: 14px;
+    max-width: calc(100vw - 40px);
+  }
 }
 
 /* =========================
