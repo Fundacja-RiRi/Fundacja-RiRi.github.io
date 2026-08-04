@@ -3,7 +3,7 @@ layout: specialist
 image: /images/specialists/AleksandraDudek.webp
 name: Aleksandra
 surname: Dudek
-specializations: logopeda, psycholog
+specializations: psycholog
 ---
 
 Ukończyłam jednolite studia magisterskie na Uniwersytecie Wrocławskim na kierunku psychologia ze specjalnością kliniczno-wychowawczą dzieci i młodzieży. Jestem trenerką TUS oraz posiada przygotowanie pedagogiczne. Obecnie poszerzam swoje kwalifikacje, kształcąc się na studiach podyplomowych z zakresu diagnozy psychologicznej w praktyce klinicznej oraz zdobywając kwalifikacje specjalisty wczesnego wspomagania rozwoju. 
@@ -12,4 +12,8 @@ Na co dzień pracuję w poradni psychologiczno-pedagogicznej, gdzie zajmuję si�
 
 Posiadam uprawnienia do stosowania Testu Inteligencji Stanford–Binet 5. Jestem również kwalifikowanym opiekunem dziecięcym oraz ukończyłam roczny kurs z zakresu terapii uzależnień. Posiadam kilkuletnie doświadczenie w pracy z dziećmi. Stale rozwijam swoje kompetencje zawodowe, uczestnicząc w szkoleniach i konferencjach.
 
+Znajdziesz mnie również tutaj:
+
+[🩺 Medfile](https://www.medfile.pl/aleksandra-dudek-4/specjalista/szewce/)
+[👩‍⚕️ Halodoctor](https://www.halodoctor.pl/lekarze/aleksandra-dudek-4-specjalista-szewce)
 
