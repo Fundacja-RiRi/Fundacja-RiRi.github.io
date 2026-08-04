@@ -1,0 +1,42 @@
+---
+layout: kadra
+title: Kadra
+---
+
+
+<section class="section-boxed team-header-section">
+        <h1>Kadra</h1>
+</section>
+<section class="team-section"> 
+    {% assign sorted_specialists = site.kadra | sort: "surname" %}
+    
+    <!-- LIST OF SHORTEN specialistS -->
+    <div class="team-list">
+    {% for specialist in sorted_specialists %}
+        <a class="team-card" href="{{ specialist.url | relative_url }}">
+
+            {% if specialist.image %}
+            <div class="team-image">
+                <img src="{{ specialist.image | relative_url }}" alt="{{ specialist.name }} {{ specialist.surname }}">
+            </div>
+            {% else %}
+            <div class="team-image">
+                <img src="{{ '/images/specialists/default-specialist.webp' | relative_url }}" alt="{{ specialist.name }} {{ specialist.surname }}">
+            </div>
+            {% endif %}
+
+            <div class="specialist-name">
+                <h4>{{ specialist.name }}<br>{{ specialist.surname }}</h4>
+            </div>
+
+            <div class="specialist-roles">
+                {{ specialist.specializations }}
+            </div>
+
+        </a>
+    {% endfor %}
+    </div>
+</section>
+
+
+<script src="/js/read-more-modal.js"></script>

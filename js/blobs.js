@@ -69,16 +69,18 @@ createBlob({ svgIndex: 9, top: "76%", left: "45%", size: 27, opacity: 0.9 });
 createBlob({ svgIndex: 10, top: "110%", left: "10%", size: 25, opacity: 0.7 });
 createBlob({ svgIndex: 11, top: "100%", left: "90%", size: 20, opacity: 0.6 });
 
-// Płynny parallax z requestAnimationFrame
+// Animation
 let lastScrollY = window.scrollY;
 
-window.addEventListener("scroll", () => {
-    lastScrollY = -window.scrollY;
+const scrollTarget = document.querySelector("body");
+
+scrollTarget.addEventListener("scroll", () => {
+    lastScrollY = -scrollTarget.scrollTop;
 });
 
 function updateBlobs() {
     document.querySelectorAll(".blob").forEach(blob => {
-        const speed = 0.05
+        const speed = 0.1
         blob.style.transform = `translateY(${lastScrollY * speed}px)`;
     });
     requestAnimationFrame(updateBlobs);

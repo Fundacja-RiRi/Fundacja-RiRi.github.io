@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8E0ZRLJVHK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8E0ZRLJVHK');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kadra Poradni Psychologiczno Pedagogicznej RIRI &ndash; zespół profesjonalistów specjalizujących się w psychologii i pedagogice.">
+    <title>{{ page.name }} {{ page.surname }} - Poradnia Psychologiczno Pedagogiczna RIRI</title>
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.ico"sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+    <link rel="preload" href="{{ site.baseurl }}/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="canonical" href="https://riri.org.pl/">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+    <script type="application/ld+json" async>
+    {
+        "@context": "https://schema.org",
+        "@type": "Team",
+        "name": "Kadra &ndash; Poradnia Psychologiczno Pedagogiczna RIRI",
+        "url": "https://riri.org.pl/kadra.html",
+        "description": "Kadra Poradni Psychologiczno Pedagogicznej RIRI to zespół doświadczonych specjalistów w dziedzinie psychologii i pedagogiki, oferujących wsparcie i terapię dla dzieci i młodzieży.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Poradnia Psychologiczno Pedagogiczna RIRI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://riri.org.pl/images/logo.webp"
+            }
+        },
+        "inLanguage": "pl-PL"
+    }
+    </script>
+</head>
+<body data-page="kadra">
+    <!-- BACKGROUND SHAPES -->
+    <div id="blobs-container"></div>
+
+    <!-- NAVBAR -->
+    <div id="navbar-placeholder"></div>
+    <script>
+    fetch('/components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
+
+    <main>
+        <section class="section-boxed specialist-section">
+            <div class="specialist-layout">
+                <div class="specialist-photo">
+                    {% if page.image %}
+                        <img src="{{ page.image | relative_url }}" alt="{{ page.name }} {{ page.surname }}">
+                    {% endif %}
+                </div>
+
+                <div class="specialist-info">
+                    <h1>{{ page.name }} {{ page.surname }}</h1>
+                    
+                    <h4>{{ page.specializations }}</h4>
+
+                    <div class="specialist-content">
+
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+
+            <a href="{{ '/kadra/' | relative_url }}" class="back-link">← Powrót do kadry</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+    <script>
+    fetch('/components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script>
+
+    <!-- COOKIES -->
+    <div id="cookie-banner" class="cookie-card">
+        <button id="cookie-close" class="cookie-close" aria-label="Zamknij">&times;</button>
+        <div class="cookie-icon">🍪</div>
+        <h3>Cookies!</h3>
+        <p>
+            Używamy plików cookies, aby poprawić Twoje doświadczenie. Klikając „Akceptuję”, zgadzasz się na ich użycie zgodnie z naszą 
+            <a href="/prywatnosc/" target="_blank" rel="noopener noreferrer">polityką prywatności</a>.
+        </p>
+        <button id="cookie-accept" class="cookie-btn primary">Akceptuję</button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- <script src="{{ site.baseurl }}/js/include.js"></script> -->
+    <script src="{{ site.baseurl }}/js/blobs.js" defer></script>
+    <script src="{{ site.baseurl }}/js/read-more-modal.js" defer></script>
+    <script src="{{ site.baseurl }}/js/hamburger.js" defer></script>
+    <script src="{{ site.baseurl }}/js/navbar-active.js" defer></script>
+    <script src="{{ site.baseurl }}/js/cookie-banner.js" defer></script>
+</body>
+</html>
+
