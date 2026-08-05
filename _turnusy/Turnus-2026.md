@@ -1,13 +1,16 @@
 ---
+layout: turnus_poster
 title: Turnus terapeutyczny 2026
 image: /images/aktualnosci/turnus-terapeutyczny-2026.webp
+button_text: Formularz zgłoszeniowy
+button_link: https://forms.gle/RdC3TRPPqSRtZymL6
 ---
 
 ## Wakacyjny Turnus Terapeutyczny
 
 <!--more-->
 
-Zapraszamy dzieci do udziału w **Wakacyjnym Turnusie Terapeutycznym** — **intensywnym**, *** programie** wspierającym rozwój dziecka w przyjaznej, bezpiecznej i pełnej ciepła atmosferze.
+Zapraszamy dzieci do udziału w **Wakacyjnym Turnusie Terapeutycznym** — **intensywnym**, **programie** wspierającym rozwój dziecka w przyjaznej, bezpiecznej i pełnej ciepła atmosferze.
 
 Turnus został przygotowany z myślą o najmłodszych uczestnikach, którzy potrzebują wsparcia w rozwoju **mowy**, **komunikacji**, **umiejętności społecznych**, sprawności ruchowej, koncentracji, samodzielności oraz funkcjonowania w grupie rówieśniczej. To połączenie **specjalistycznej terapii**, zabawy i wartościowo spędzonego czasu wakacyjnego.
 

@@ -1,4 +1,5 @@
 ---
+layout: turnus_poster
 title: Turnus AAC 2026
 image: /images/aktualnosci/turnus-aac-2026.webp
 ---

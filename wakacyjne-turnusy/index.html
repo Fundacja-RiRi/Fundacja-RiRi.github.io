@@ -30,28 +30,12 @@ title: Turnusy
             </div>
             {% endif %}
 
-            <button class="button read-more" data-post-index="{{ forloop.index0 }}">Czytaj więcej</button>
+            <a class="button" href="{{ turnus.url | relative_url }}">Czytaj więcej</a>
         </div>
         {% endfor %}
     </div>
 </section>
 
-{% for turnus in site.turnusy %}
-<div class="modal" id="modal-{{ forloop.index0 }}">
-    <div class="modal-wrapper">
-        <span class="modal-close">&times;</span>
-        
-        <div class="modal-header">
-            <h2>{{ turnus.title }}</h2>
-        </div>
-        
-        <div class="modal-body">
-            <div class="modal-text">{{ turnus.content | markdownify }}</div>
-        </div>
-
-    </div>
-</div>
-{% endfor %}
 
 <section class="section-boxed">
     <h2>Dla kogo są nasze turnusy?</h2>
@@ -125,6 +109,4 @@ title: Turnusy
         </div>
 </section>
 
-
-<script src="/js/read-more-modal.js"></script>
 

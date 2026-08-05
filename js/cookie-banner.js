@@ -30,3 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
         gtag('config', 'G-ABCDEFG123');
     }
 });
+
+// Scroll to top button 
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+const scrollTarget2 = document.querySelector("body");
+
+if (scrollToTopBtn && scrollTarget2) {
+    // Show or hide the button based on scroll position
+    scrollTarget2.addEventListener('scroll', () => {
+        if (scrollTarget2.scrollTop > 300) {
+            scrollToTopBtn.classList.add('visible');
+        } else {
+            scrollToTopBtn.classList.remove('visible');
+        }
+    });
+
+    // Scroll to top when the button is clicked
+    scrollToTopBtn.addEventListener('click', () => {
+        scrollTarget2.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
