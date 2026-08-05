@@ -5,6 +5,7 @@ User-agent: *
 # --- Disallow internal Jekyll folders ---
 Disallow: /_layouts/
 Disallow: /_aktualnosci/
+Disallow: /_kadra/
 
 # --- Allow public assets ---
 Allow: /css/

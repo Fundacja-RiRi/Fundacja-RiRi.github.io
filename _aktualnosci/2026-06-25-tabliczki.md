@@ -1,10 +1,11 @@
 ---
+layout: post_poster
 title: "Nowe tabliczki"
 date: 2026-06-25
 image: /images/aktualnosci/lepsza_tabliczka.webp
 ---
 
-#### ⭐ Z radością chwalimy się kolejnym krokiem w stronę większej dostępności naszej Fundacji! 💙💛💚
+## ⭐ Z radością chwalimy się kolejnym krokiem w stronę większej dostępności naszej Fundacji! 💙💛💚
 
 
 <!--more-->

@@ -4,29 +4,30 @@
         <loc>https://riri.pl/</loc>
     </url>
     <url>
-        <loc>https://riri.pl/aktualnosci.html</loc>
-    </url>
-    <!-- <url>
-        <loc>https://riri.pl/aac.html</loc>
-    </url> -->
-    <url>
-        <loc>https://riri.pl/wakacyjne-turnusy.html</loc>
-    <url>
-        <loc>https://riri.pl/oferta.html</loc>
-    </url>
-        <url>
-        <loc>https://riri.pl/wwr.html</loc>
+        <loc>https://riri.pl/aktualnosci/</loc>
     </url>
     <url>
-        <loc>https://riri.pl/dokumenty-do-pobrania.html</loc>
+        <loc>https://riri.pl/wakacyjne-turnusy/</loc>
     </url>
     <url>
-        <loc>https://riri.pl/kontakt.html</loc>
+        <loc>https://riri.pl/oferta/</loc>
     </url>
     <url>
-        <loc>https://riri.pl/polityka-prywatnosci.html</loc>
+        <loc>https://riri.pl/wwr/</loc>
     </url>
     <url>
-        <loc>https://riri.pl/wspieraj-nas.html</loc>
+        <loc>https://riri.pl/kadra/</loc>
+    </url>
+    <url>
+        <loc>https://riri.pl/dokumenty-do-pobrania/</loc>
+    </url>
+    <url>
+        <loc>https://riri.pl/kontakt/</loc>
+    </url>
+    <url>
+        <loc>https://riri.pl/polityka-prywatnosci/</loc>
+    </url>
+    <url>
+        <loc>https://riri.pl/wspieraj-nas/</loc>
     </url>
 </urlset>

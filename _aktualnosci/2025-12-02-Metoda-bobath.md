@@ -1,10 +1,11 @@
 ---
+layout: post_text
 title: "Metoda Bobath"
 date: 2025-12-02
 image: /images/aktualnosci/bobath.webp
 ---
 
-#### Metoda Bobath – delikatna terapia, która pomaga „nauczyć ciało” prawidłowego ruchu 🧠 👣
+## Metoda Bobath – delikatna terapia, która pomaga „nauczyć ciało” prawidłowego ruchu 🧠 👣
 
 <!--more-->
 

@@ -1,10 +1,13 @@
 ---
+layout: post_poster
 title: "Bezpłatne Zajęcia WWR"
 date: 2026-06-27
 image: /images/aktualnosci/bezplatne_zajecia.webp
+button_text: Zapraszamy do kontaktu i zapisów! 📞
+button_link: /kontakt
 ---
 
-#### Mamy jeszcze wolne miejsca!
+## Mamy jeszcze wolne miejsca!
 
 
 <!--more-->
@@ -19,6 +22,5 @@ Fundacja **RiRi** zaprasza dzieci oraz ich rodziców do skorzystania z **bezpła
 
 Serdecznie zapraszamy do kontaktu i zapisów!
 
-[Zapraszamy do kontaktu i zapisów! 📞](/kontakt) 
 
 

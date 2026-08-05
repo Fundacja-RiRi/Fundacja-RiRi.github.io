@@ -1,10 +1,11 @@
 ---
+layout: post_poster
 title: "Dziękujemy!"
 date: 2026-06-26
 image: /images/aktualnosci/dziekujemy.webp
 ---
 
-#### Dziękujemy za Wasze wsparcie! 💝
+## Dziękujemy za Wasze wsparcie! 💝
 
 
 <!--more-->

@@ -1351,6 +1351,7 @@ h3 {
 
 .news-image {
     width: 90%;
+    aspect-ratio: 1/1;
     height: 220px;
     overflow: hidden;
     margin: 0 auto;
@@ -1373,11 +1374,14 @@ h3 {
 
 .news-small {
     flex: 1;
-    margin: 0 16px 16px 16px;
+    margin: 10px 16px 0px 16px;
     color: var(--dark-gray);
-    font-size: var(--fs-body);
     line-height: 1.5;
     text-align: center;
+}
+
+.news-small h2 {
+    font-size: var(--fs-body);
 }
 
 .news-card .button {
@@ -1394,7 +1398,7 @@ h3 {
 }
 
 /* --- Modals --- */
-.modal {
+/* .modal {
     display: none;
     position: fixed;
     z-index: 6;
@@ -1494,7 +1498,7 @@ h3 {
     .modal-wrapper {
         max-width: 90%;
     }
-}
+} */
 
 /* =========================
     SUPPORT SECTION
@@ -1894,9 +1898,25 @@ h3 {
 }
 
 .specialist-content a:link {
-    color: var(--pink);
-    text-decoration: underline;
+    color: var(--dark-blue);
+    text-decoration: none;
 }
+.specialist-content a:visited {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.specialist-content a:visited:hover {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.specialist-content a:hover {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+
 
 .back-link {
     display: inline-block;
@@ -1933,5 +1953,149 @@ h3 {
     .specialist-content,
     .specialist-content p {
         text-align: center;
+    }
+}
+
+/* =========================
+    POSTER LAYOUT
+   ========================= */
+
+.poster-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.poster-header {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 24px;
+}
+
+.poster-date {
+    font-size: var(--fs-h4);
+    color: var(--dark-gray);
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+/* Dostosowanie guzika na górze */
+.poster-btn-top {
+    display: inline-block;
+    margin: 12px auto 0 auto;
+    width: auto;
+    min-width: 200px;
+}
+
+/* Kontener plakatu */
+.poster-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.poster-link {
+    position: relative;
+    display: inline-block;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px var(--box-shadow-big);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.poster-link:hover {
+    transform: scale(1.015);
+    box-shadow: 0 8px 32px var(--box-shadow-big);
+}
+
+.poster-img {
+    display: block;
+    max-width: 100%;
+    /* Ograniczenie wysokości, żeby plakat nie zajmował więcej niż 75% ekranu */
+    max-height: 75vh; 
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+/* Podpowiedź najechania (Zoom hint) */
+.poster-zoom-hint {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: var(--dim);
+    color: var(--white);
+    font-size: var(--fs-small);
+    padding: 6px 12px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+}
+
+.poster-link:hover .poster-zoom-hint {
+    opacity: 1;
+}
+
+/* Treść pod plakatem */
+.poster-content {
+    width: 100%;
+    max-width: 800px; /* Czytelna szerokość tekstu */
+    text-align: left; /* Czytelniejsze wyrównanie tekstu */
+    margin-top: 10px;
+}
+
+/* Jeśli chcesz, by nagłówki wewnątrz treści nadal były na środku */
+.poster-content h1, 
+.poster-content h2, 
+.poster-content h3 {
+    text-align: center;
+}
+
+.poster-content strong {
+    color: var(--dark-pink);
+    font-weight: 700;
+}
+
+.poster-content img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.poster-btn-bottom {
+    margin: 32px auto 16px auto;
+    width: fit-content;
+}
+
+/* Link powrotny */
+.back-link {
+    display: inline-block;
+    margin-top: 32px;
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--fs-body);
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--pink);
+}
+
+/* Responsywność */
+@media (max-width: 700px) {
+    .poster-img {
+        max-height: 60vh; /* Na telefonach plakat nie przytłacza */
+    }
+    
+    .poster-zoom-hint {
+        opacity: 1; /* Na dotykowych ekranach pokazywane domyślnie */
+        font-size: var(--fs-caption);
     }
 }
