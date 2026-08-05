@@ -3,7 +3,7 @@ layout: specialist
 image: /images/specialists/MariaWoloszyn.webp
 name: Maria
 surname: Wołoszyn
-specializations: pedagog specjalny, terapeuta ręki, terapeuta integracji sensorycznej (SI)
+specializations: pedagog specjalny, terapeuta ręki, terapeuta SI
 ---
 
 

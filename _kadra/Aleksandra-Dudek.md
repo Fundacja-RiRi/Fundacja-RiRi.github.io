@@ -6,7 +6,7 @@ surname: Dudek
 specializations: psycholog
 ---
 
-Ukończyłam jednolite studia magisterskie na Uniwersytecie Wrocławskim na kierunku psychologia ze specjalnością kliniczno-wychowawczą dzieci i młodzieży. Jestem trenerką TUS oraz posiada przygotowanie pedagogiczne. Obecnie poszerzam swoje kwalifikacje, kształcąc się na studiach podyplomowych z zakresu diagnozy psychologicznej w praktyce klinicznej oraz zdobywając kwalifikacje specjalisty wczesnego wspomagania rozwoju. 
+Ukończyłam jednolite studia magisterskie na Uniwersytecie Wrocławskim na kierunku psychologia ze specjalnością kliniczno-wychowawczą dzieci i młodzieży. Jestem trenerką TUS oraz posiadam przygotowanie pedagogiczne. Obecnie poszerzam swoje kwalifikacje, kształcąc się na studiach podyplomowych z zakresu diagnozy psychologicznej w praktyce klinicznej oraz zdobywając kwalifikacje specjalisty wczesnego wspomagania rozwoju. 
 
 Na co dzień pracuję w poradni psychologiczno-pedagogicznej, gdzie zajmuję się przede wszystkim diagnozą psychologiczną dzieci z wykorzystaniem standaryzowanych narzędzi diagnostycznych. Przeprowadzam ocenę potencjału intelektualnego, funkcjonowania poznawczego, mocnych stron oraz obszarów wymagających wsparcia. Sporządzam opinie psychologiczne oraz uczestniczę w procesie orzecznictwa. 
 
